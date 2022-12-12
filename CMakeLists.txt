@@ -3,4 +3,4 @@ project(LAB_2_Supermarket_Modeling)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(LAB_2_Supermarket_Modeling main.cpp Product.cpp Product.h Shelve.cpp Shelve.h)
+add_executable(LAB_2_Supermarket_Modeling main.cpp Product.cpp Product.h Shelve.cpp Shelve.h Freezer.cpp Freezer.h Refrigerator.cpp Refrigerator.h)

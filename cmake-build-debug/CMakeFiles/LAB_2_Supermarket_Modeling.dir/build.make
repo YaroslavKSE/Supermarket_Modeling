@@ -105,11 +105,39 @@ CMakeFiles/LAB_2_Supermarket_Modeling.dir/Shelve.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LAB_2_Supermarket_Modeling.dir/Shelve.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/C++/LAB_2_Supermarket_Modeling/Shelve.cpp -o CMakeFiles/LAB_2_Supermarket_Modeling.dir/Shelve.cpp.s
 
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.o: CMakeFiles/LAB_2_Supermarket_Modeling.dir/flags.make
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.o: ../Freezer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/C++/LAB_2_Supermarket_Modeling/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.o -c /cygdrive/c/C++/LAB_2_Supermarket_Modeling/Freezer.cpp
+
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/C++/LAB_2_Supermarket_Modeling/Freezer.cpp > CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.i
+
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/C++/LAB_2_Supermarket_Modeling/Freezer.cpp -o CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.s
+
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.o: CMakeFiles/LAB_2_Supermarket_Modeling.dir/flags.make
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.o: ../Refrigerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/C++/LAB_2_Supermarket_Modeling/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.o -c /cygdrive/c/C++/LAB_2_Supermarket_Modeling/Refrigerator.cpp
+
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/C++/LAB_2_Supermarket_Modeling/Refrigerator.cpp > CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.i
+
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/C++/LAB_2_Supermarket_Modeling/Refrigerator.cpp -o CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.s
+
 # Object files for target LAB_2_Supermarket_Modeling
 LAB_2_Supermarket_Modeling_OBJECTS = \
 "CMakeFiles/LAB_2_Supermarket_Modeling.dir/main.cpp.o" \
 "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Product.cpp.o" \
-"CMakeFiles/LAB_2_Supermarket_Modeling.dir/Shelve.cpp.o"
+"CMakeFiles/LAB_2_Supermarket_Modeling.dir/Shelve.cpp.o" \
+"CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.o" \
+"CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.o"
 
 # External object files for target LAB_2_Supermarket_Modeling
 LAB_2_Supermarket_Modeling_EXTERNAL_OBJECTS =
@@ -117,9 +145,11 @@ LAB_2_Supermarket_Modeling_EXTERNAL_OBJECTS =
 LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/main.cpp.o
 LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/Product.cpp.o
 LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/Shelve.cpp.o
+LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.o
+LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.o
 LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make
 LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/C++/LAB_2_Supermarket_Modeling/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable LAB_2_Supermarket_Modeling.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/C++/LAB_2_Supermarket_Modeling/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable LAB_2_Supermarket_Modeling.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LAB_2_Supermarket_Modeling.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

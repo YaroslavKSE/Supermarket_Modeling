@@ -129,6 +129,30 @@ LAB_2_Supermarket_Modeling/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/build
 .PHONY : LAB_2_Supermarket_Modeling/fast
 
+Freezer.o: Freezer.cpp.o
+.PHONY : Freezer.o
+
+# target to build an object file
+Freezer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.o
+.PHONY : Freezer.cpp.o
+
+Freezer.i: Freezer.cpp.i
+.PHONY : Freezer.i
+
+# target to preprocess a source file
+Freezer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.i
+.PHONY : Freezer.cpp.i
+
+Freezer.s: Freezer.cpp.s
+.PHONY : Freezer.s
+
+# target to generate assembly for a file
+Freezer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.s
+.PHONY : Freezer.cpp.s
+
 Product.o: Product.cpp.o
 .PHONY : Product.o
 
@@ -152,6 +176,30 @@ Product.s: Product.cpp.s
 Product.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Product.cpp.s
 .PHONY : Product.cpp.s
+
+Refrigerator.o: Refrigerator.cpp.o
+.PHONY : Refrigerator.o
+
+# target to build an object file
+Refrigerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.o
+.PHONY : Refrigerator.cpp.o
+
+Refrigerator.i: Refrigerator.cpp.i
+.PHONY : Refrigerator.i
+
+# target to preprocess a source file
+Refrigerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.i
+.PHONY : Refrigerator.cpp.i
+
+Refrigerator.s: Refrigerator.cpp.s
+.PHONY : Refrigerator.s
+
+# target to generate assembly for a file
+Refrigerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.s
+.PHONY : Refrigerator.cpp.s
 
 Shelve.o: Shelve.cpp.o
 .PHONY : Shelve.o
@@ -210,9 +258,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LAB_2_Supermarket_Modeling"
+	@echo "... Freezer.o"
+	@echo "... Freezer.i"
+	@echo "... Freezer.s"
 	@echo "... Product.o"
 	@echo "... Product.i"
 	@echo "... Product.s"
+	@echo "... Refrigerator.o"
+	@echo "... Refrigerator.i"
+	@echo "... Refrigerator.s"
 	@echo "... Shelve.o"
 	@echo "... Shelve.i"
 	@echo "... Shelve.s"

@@ -80,10 +80,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Freezer.cpp">
+			<Option target="LAB_2_Supermarket_Modeling"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Freezer.h">
+			<Option target="LAB_2_Supermarket_Modeling"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Product.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Product.h">
+			<Option target="LAB_2_Supermarket_Modeling"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Refrigerator.cpp">
+			<Option target="LAB_2_Supermarket_Modeling"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Refrigerator.h">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Shelve.cpp">
