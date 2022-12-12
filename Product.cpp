@@ -1,14 +1,25 @@
 #include "Product.h"
-Product::Product(string name, int weight): Name(move(name)), Weight(weight){}
+Product::Product(string name, float weight, string type) : Name(move(name)), Weight(weight), type(type) {}
+
+string Product::GetName() const {
+    return Name;
+}
+
+float Product::GetWeight() const {
+    return Weight;
+}
+
+string Product::GetType() const {
+    return type;
+}
 
 Product::Product() = default;
 
-//Milk::Milk(int daysToExpire): Product(), DaysToExpire(daysToExpire) {}
 
-Eggs::Eggs(int daysToExpire, int numberOfEggs): DaysToExpire(daysToExpire), NumberOfEggs(numberOfEggs){}
-
-Milk::Milk(const Product& product, int daysToExpire) {
-    this -> Milk::Name = Product::Name;
-    this -> Milk::Weight = Product::Weight;
+ProductWithDD::ProductWithDD(const Product& product, int daysToExpire) {
+    this -> ProductWithDD::Name = product.GetName();
+    this -> ProductWithDD::Weight = product.GetWeight();
+    this -> ProductWithDD::type = product.GetType();
     this -> DaysToExpire = daysToExpire;
+
 }
