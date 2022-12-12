@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/C++/LAB_2_Supermarket_Modeling/FileReader.cpp
-FileReader.h
-/cygdrive/c/C++/LAB_2_Supermarket_Modeling/FileReader.h
-vector
--
-
 /cygdrive/c/C++/LAB_2_Supermarket_Modeling/FileReader.h
 iostream
 -
