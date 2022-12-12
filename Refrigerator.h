@@ -4,9 +4,12 @@
 #include "Product.h"
 #include <vector>
 
-class Refrigerator{
+using namespace std;
+
+class Refrigerator {
 public:
-    Refrigerator(int temperature, vector <Product> products);
+    Refrigerator(int temperature, vector<Product> products);
+
     Refrigerator();
 
 private:

@@ -129,6 +129,30 @@ LAB_2_Supermarket_Modeling/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/build
 .PHONY : LAB_2_Supermarket_Modeling/fast
 
+FileReader.o: FileReader.cpp.o
+.PHONY : FileReader.o
+
+# target to build an object file
+FileReader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/FileReader.cpp.o
+.PHONY : FileReader.cpp.o
+
+FileReader.i: FileReader.cpp.i
+.PHONY : FileReader.i
+
+# target to preprocess a source file
+FileReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/FileReader.cpp.i
+.PHONY : FileReader.cpp.i
+
+FileReader.s: FileReader.cpp.s
+.PHONY : FileReader.s
+
+# target to generate assembly for a file
+FileReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/FileReader.cpp.s
+.PHONY : FileReader.cpp.s
+
 Freezer.o: Freezer.cpp.o
 .PHONY : Freezer.o
 
@@ -258,6 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LAB_2_Supermarket_Modeling"
+	@echo "... FileReader.o"
+	@echo "... FileReader.i"
+	@echo "... FileReader.s"
 	@echo "... Freezer.o"
 	@echo "... Freezer.i"
 	@echo "... Freezer.s"

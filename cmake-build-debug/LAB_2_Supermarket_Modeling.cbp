@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/C++/LAB_2_Supermarket_Modeling/FileReader.cpp">
+			<Option target="LAB_2_Supermarket_Modeling"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/C++/LAB_2_Supermarket_Modeling/FileReader.h">
+			<Option target="LAB_2_Supermarket_Modeling"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Freezer.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>

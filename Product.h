@@ -1,11 +1,11 @@
 #ifndef LAB_2_SUPERMARKET_MODELING_PRODUCT_H
 #define LAB_2_SUPERMARKET_MODELING_PRODUCT_H
 
-#include <iostream>;
+#include <iostream>
+
 using namespace std;
 
-class Product
-{
+class Product {
 private:
     string Name;
     int Weight{};

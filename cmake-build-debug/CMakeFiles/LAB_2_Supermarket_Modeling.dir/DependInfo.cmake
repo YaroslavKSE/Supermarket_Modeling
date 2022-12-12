@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/cygdrive/c/C++/LAB_2_Supermarket_Modeling/FileReader.cpp" "/cygdrive/c/C++/LAB_2_Supermarket_Modeling/cmake-build-debug/CMakeFiles/LAB_2_Supermarket_Modeling.dir/FileReader.cpp.o"
   "/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Freezer.cpp" "/cygdrive/c/C++/LAB_2_Supermarket_Modeling/cmake-build-debug/CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.o"
   "/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Product.cpp" "/cygdrive/c/C++/LAB_2_Supermarket_Modeling/cmake-build-debug/CMakeFiles/LAB_2_Supermarket_Modeling.dir/Product.cpp.o"
   "/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Refrigerator.cpp" "/cygdrive/c/C++/LAB_2_Supermarket_Modeling/cmake-build-debug/CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.o"

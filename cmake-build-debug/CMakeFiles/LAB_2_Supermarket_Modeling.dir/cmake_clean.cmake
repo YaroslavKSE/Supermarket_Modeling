@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LAB_2_Supermarket_Modeling.dir/FileReader.cpp.o"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.o"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Product.cpp.o"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.o"
