@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Product.cpp
+Product.h
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Product.h
+
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Product.h
+iostream
+-
+
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Shelve.cpp
+Shelve.h
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Shelve.h
+
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Shelve.h
+vector
+-
+Product.h
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Product.h
+
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/main.cpp
+Product.h
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Product.h
+Shelve.h
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/Shelve.h
+

@@ -1,0 +1,3 @@
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/C++/LAB_2_Supermarket_Modeling/cmake-build-debug/CMakeFiles/LAB_2_Supermarket_Modeling.dir
