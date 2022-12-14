@@ -8,13 +8,15 @@ using namespace std;
 
 class Refrigerator {
 public:
-    Refrigerator(int temperature, vector<Product> products);
+    Refrigerator(int temperature, vector<Product*> products);
 
     Refrigerator();
 
 private:
     int temperature{};
-    vector<Product> products;
+    vector<Product*> Products;
+    void AddProduct(Product* product);
+
 };
 
 

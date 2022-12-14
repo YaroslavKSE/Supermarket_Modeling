@@ -1,11 +1,13 @@
 #include "Shelve.h"
 
-Shelve::Shelve(vector <Product> products) : Products(products) {}
+#include <utility>
+
+Shelve::Shelve(vector <Product*> products) : Products(std::move(products)) {}
 
 Shelve::Shelve()
 = default;
 
-void Shelve::AddProduct(Product product)
+void Shelve::AddProduct(Product* product)
 {
     Products.push_back(product);
 }

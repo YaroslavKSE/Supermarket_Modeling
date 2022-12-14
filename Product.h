@@ -7,29 +7,50 @@ using namespace std;
 
 class Product {
 protected:
-    string type;
     string Name;
     float Weight{};
 
 public:
     Product();
 
-    Product(string name, float weight, string type);
+    Product(string name, float weight);
 
-    string GetName() const;
+    string GetName();
 
-    float GetWeight() const;
-
-    string GetType() const;
+    float GetWeight();
+    virtual ~Product();
 };
 
-class ProductWithDD : Product{
+// to fix inheriting constructor
+class Milk : public Product {
 private:
-    int DaysToExpire;
-
+    int DaysToExpire{};
 public:
-    ProductWithDD(const Product& product, int daysToExpire);
+    Milk(Product product, int daysToExpire);
 };
 
+
+// to fix inheriting constructor
+class Eggs : public Product {
+    int DaysToExpire;
+    int NumberOfEggs;
+public:
+    Eggs(Product product, int daysToExpire, int NumberOfEggs);
+};
+
+class Fish : public Product{
+public:
+    using Product::Product;
+};
+
+class Meat : public Product{
+public:
+    using Product::Product;
+};
+
+class Soap : public Product{
+public:
+    using Product::Product;
+};
 
 #endif //LAB_2_SUPERMARKET_MODELING_PRODUCT_H

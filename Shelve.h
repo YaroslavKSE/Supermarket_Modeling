@@ -6,11 +6,11 @@
 #include "Product.h"
 class Shelve
 {
-    vector<Product> Products;
+    vector<Product*> Products;
 public:
     Shelve();
-    Shelve(vector<Product> products);
-    void AddProduct(Product product);
+    explicit Shelve(vector<Product*> products);
+    void AddProduct(Product* product);
 };
 
 
