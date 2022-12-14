@@ -6,7 +6,6 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -39,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "LAB_2_Supermarket_Modeling::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LAB_2_Supermarket_Modeling-Debug-3d254c212ed2da5668f8.json",
+					"jsonFile" : "target-LAB_2_Supermarket_Modeling-Debug-198a94adc74b2fcd64ef.json",
 					"name" : "LAB_2_Supermarket_Modeling",
 					"projectIndex" : 0
 				}
@@ -49,12 +48,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Projects_C++/cmake-build-debug",
-		"source" : "D:/Projects_C++"
+		"build" : "/cygdrive/c/C++/LAB_2_Supermarket_Modeling/cmake-build-debug",
+		"source" : "/cygdrive/c/C++/LAB_2_Supermarket_Modeling"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 2
 	}
 }

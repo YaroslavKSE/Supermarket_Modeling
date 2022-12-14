@@ -21,16 +21,27 @@ public:
     virtual ~Product();
 };
 
-// to fix inheriting constructor
 class Milk : public Product {
 private:
-    int DaysToExpire{};
+    int DaysToExpire;
 public:
     Milk(Product product, int daysToExpire);
 };
 
+class Bread : public Product {
+private:
+    int DaysToExpire;
+public:
+    Bread(Product product, int daysToExpire);
+};
 
-// to fix inheriting constructor
+class Water : public Product {
+private:
+    int DaysToExpire;
+public:
+    Water(Product product, int daysToExpire);
+};
+
 class Eggs : public Product {
     int DaysToExpire;
     int NumberOfEggs;

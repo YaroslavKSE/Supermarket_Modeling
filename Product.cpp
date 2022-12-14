@@ -28,3 +28,15 @@ Milk::Milk(Product product, int daysToExpire) {
     this -> Milk::Weight = product.GetWeight();
     this -> DaysToExpire = daysToExpire;
 }
+
+Bread::Bread(Product product, int daysToExpire) {
+    this -> Bread::Name = product.GetName();
+    this -> Bread::Weight = product.GetWeight();
+    this -> DaysToExpire = daysToExpire;
+}
+
+Water::Water(Product product, int daysToExpire) {
+    this -> Water::Name = product.GetName();
+    this -> Water::Weight = product.GetWeight();
+    this -> DaysToExpire = daysToExpire;
+}

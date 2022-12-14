@@ -12,10 +12,11 @@ public:
 
     Refrigerator();
 
+    void AddProduct(Product* product);
+
 private:
     int temperature{};
     vector<Product*> Products;
-    void AddProduct(Product* product);
 
 };
 

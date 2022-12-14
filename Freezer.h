@@ -12,9 +12,11 @@ public:
 
     Freezer();
 
+    void AddProduct(Product* product);
+
 private:
     int temperature{};
-    vector<Product*> products;
+    vector<Product*> Products;
 };
 
 #endif //LAB_2_SUPERMARKET_MODELING_FREEZER_H
