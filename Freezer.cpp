@@ -25,4 +25,8 @@ void Freezer::RemoveProduct(string product, string name) {
     }
 }
 
+Product *Freezer::GetFirstProduct() {
+    return Products[0];
+}
+
 Freezer::Freezer() = default;

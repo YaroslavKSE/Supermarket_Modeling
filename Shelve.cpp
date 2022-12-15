@@ -49,3 +49,7 @@ void Shelve::RemoveProduct(string product, string name) {
         }
     }
 }
+
+Product *Shelve::GetFirstProduct() {
+    return Products[0];
+}

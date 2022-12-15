@@ -123,7 +123,6 @@ int main() {
             supermarket.AddFreezer(FillFreezer(record));
         }
     }
-
     while (true) {
         cout << "Enter command:" << "\n";
         string command;
@@ -145,7 +144,19 @@ int main() {
         if(userInput[0] == "Take"){
             supermarket.Take(userInput[1], userInput[2]);
         }
+        // Add Shelve 1 "Soap Dove 0.45"
+        if(userInput[0] == "Add"){
+            if(userInput[1] == "Shelve"){
+                supermarket.AddToExactShelve(FillShelve(userInput).GetFirstProduct(), stoi(userInput[2]));
+            }
+            if(userInput[1] == "Refrigerator"){
+                supermarket.AddToExactFridge(FillFridge(userInput).GetFirstProduct(), stoi(userInput[2]));
 
+            }
+            if(userInput[1] == "Freezer"){
+                supermarket.AddToExactFreezer(FillFreezer(userInput).GetFirstProduct(), stoi(userInput[2]));
+            }
+        }
         if(userInput[0] == "Set"){
 
         }

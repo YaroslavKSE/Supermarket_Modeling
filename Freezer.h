@@ -19,6 +19,8 @@ public:
 
     void NextDay();
 
+    Product* GetFirstProduct();
+
     void RemoveProduct(string product, string name);
 
 private:

@@ -14,6 +14,7 @@ public:
 
     void AddProduct(Product* product);
 
+    Product* GetFirstProduct();
     void Print();
 
     void NextDay();

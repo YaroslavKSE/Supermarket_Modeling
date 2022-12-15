@@ -15,10 +15,13 @@ private:
 public:
     Supermarket();
 
-    __attribute__((unused)) Supermarket(const vector<Refrigerator>& refrigerators, const vector<Freezer>& freezers, const vector<Shelve>& shelves);
+    Supermarket(const vector<Refrigerator>& refrigerators, const vector<Freezer>& freezers, const vector<Shelve>& shelves);
     void AddFridge(const Refrigerator& fridge);
     void AddFreezer(const Freezer& freezer);
     void AddShelve(const Shelve& shelve);
+    void AddToExactShelve(Product *const product, int number);
+    void AddToExactFridge(Product *const product, int number);
+    void AddToExactFreezer(Product *const product, int number);
     void View();
     void ViewByType(const string& containerType);
     void NextDay();

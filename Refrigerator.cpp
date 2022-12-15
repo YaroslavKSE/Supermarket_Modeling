@@ -45,5 +45,9 @@ void Refrigerator::RemoveProduct(string product, string name) {
     }
 }
 
+Product *Refrigerator::GetFirstProduct() {
+    return Products[0];
+}
+
 
 Refrigerator::Refrigerator() = default;

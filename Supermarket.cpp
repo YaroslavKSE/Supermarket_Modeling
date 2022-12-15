@@ -2,8 +2,8 @@
 
 Supermarket::Supermarket() = default;
 
-__attribute__((unused)) Supermarket::Supermarket(const vector<Refrigerator>& refrigerators, const vector<Freezer>& freezers,
-                         const vector<Shelve>& shelves) {
+Supermarket::Supermarket(const vector<Refrigerator>& refrigerators, const vector<Freezer>& freezers,
+                                             const vector<Shelve>& shelves) {
     this -> Refrigerators = refrigerators;
     this -> Freezers = freezers;
     this -> Shelves = shelves;
@@ -13,12 +13,26 @@ void Supermarket::AddFridge(const Refrigerator& fridge) {
     Refrigerators.push_back(fridge);
 }
 
+void Supermarket::AddToExactFridge(Product *const product, int number) {
+    Refrigerators[number].AddProduct(product);
+
+}
+
 void Supermarket::AddFreezer(const Freezer& freezer) {
     Freezers.push_back(freezer);
 }
 
+void Supermarket::AddToExactFreezer(Product *const product, int number) {
+    Freezers[number].AddProduct(product);
+
+}
+
 void Supermarket::AddShelve(const Shelve& shelve) {
     Shelves.push_back(shelve);
+}
+
+void Supermarket::AddToExactShelve(Product *const product, int number) {
+    Shelves[number].AddProduct(product);
 }
 
 void Supermarket::View() {
@@ -82,3 +96,5 @@ void Supermarket::Take(const string& product, const string& name) {
         Freezer.RemoveProduct(product, name);
     }
 }
+
+
