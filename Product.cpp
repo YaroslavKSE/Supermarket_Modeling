@@ -1,14 +1,13 @@
 #include "Product.h"
 Product::Product(string name, float weight): Name(move(name)), Weight(weight){}
 
-Product::~Product() {
-}
+Product::~Product() = default;
 
 string Product::GetName() {
     return Name;
 }
 
-float Product::GetWeight() {
+float Product::GetWeight() const {
     return Weight;
 }
 
@@ -33,10 +32,18 @@ void Eggs::Print() {
 
 }
 
+int Eggs::GetDaysToExpire() {
+    return DaysToExpire;
+}
+
 Milk::Milk(Product product, int daysToExpire) {
     this -> Milk::Name = product.GetName();
     this -> Milk::Weight = product.GetWeight();
     this -> DaysToExpire = daysToExpire;
+}
+
+int Milk::GetDaysToExpire() const {
+    return DaysToExpire;
 }
 
 Bread::Bread(Product product, int daysToExpire) {
@@ -48,6 +55,10 @@ Bread::Bread(Product product, int daysToExpire) {
 void Bread::Print() {
     Product::Print();
     cout << "Days To Expire:" << DaysToExpire <<"\n" ;
+}
+
+int Bread::GetDaysToExpire() const {
+    return DaysToExpire;
 }
 
 Water::Water(Product product, int daysToExpire) {

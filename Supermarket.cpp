@@ -2,22 +2,22 @@
 
 Supermarket::Supermarket() = default;
 
-Supermarket::Supermarket(const vector<Refrigerator>& refrigerators, const vector<Freezer>& freezers,
+__attribute__((unused)) Supermarket::Supermarket(const vector<Refrigerator>& refrigerators, const vector<Freezer>& freezers,
                          const vector<Shelve>& shelves) {
     this -> Refrigerators = refrigerators;
     this -> Freezers = freezers;
     this -> Shelves = shelves;
 }
 
-void Supermarket::AddFridge(Refrigerator fridge) {
+void Supermarket::AddFridge(const Refrigerator& fridge) {
     Refrigerators.push_back(fridge);
 }
 
-void Supermarket::AddFreezer(Freezer freezer) {
+void Supermarket::AddFreezer(const Freezer& freezer) {
     Freezers.push_back(freezer);
 }
 
-void Supermarket::AddShelve(Shelve shelve) {
+void Supermarket::AddShelve(const Shelve& shelve) {
     Shelves.push_back(shelve);
 }
 
@@ -56,4 +56,19 @@ void Supermarket::ViewByType(const string& containerType) {
         }
     }
 
+}
+
+void Supermarket::NextDay() {
+//    for (int i = 0; i < Shelves.size(); ++i) {
+//        cout << "Shelve #" << i << "\n";
+//        Shelves[i].Print();
+//    }
+
+    for (int i = 0; i < Refrigerators.size(); ++i) {
+        vector<Product*> expired = Refrigerators[i].NextDay();
+    }
+//    for (int i = 0; i < Freezers.size(); ++i) {
+//        cout << "Freezer #" << i << "\n";
+//        Freezers[i].Print();
+//    }
 }

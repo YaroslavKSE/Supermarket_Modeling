@@ -16,6 +16,8 @@ public:
 
     void Print();
 
+    vector<Product*> NextDay();
+
 private:
     int temperature{};
     vector<Product*> Products;

@@ -14,12 +14,14 @@ private:
     vector<Shelve> Shelves;
 public:
     Supermarket();
-    Supermarket(const vector<Refrigerator>& refrigerators, const vector<Freezer>& freezers, const vector<Shelve>& shelves);
-    void AddFridge(Refrigerator fridge);
-    void AddFreezer(Freezer freezer);
-    void AddShelve(Shelve shelve);
+
+    __attribute__((unused)) Supermarket(const vector<Refrigerator>& refrigerators, const vector<Freezer>& freezers, const vector<Shelve>& shelves);
+    void AddFridge(const Refrigerator& fridge);
+    void AddFreezer(const Freezer& freezer);
+    void AddShelve(const Shelve& shelve);
     void View();
     void ViewByType(const string& containerType);
+    void NextDay();
 };
 
 

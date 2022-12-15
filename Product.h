@@ -17,7 +17,7 @@ public:
 
     string GetName();
 
-    float GetWeight();
+    float GetWeight() const;
 
     virtual void Print();
     virtual ~Product();
@@ -28,6 +28,7 @@ private:
     int DaysToExpire;
 public:
     Milk(Product product, int daysToExpire);
+    int GetDaysToExpire() const;
 };
 
 class Bread : public Product {
@@ -36,6 +37,7 @@ private:
 public:
     Bread(Product product, int daysToExpire);
     void Print() override;
+    int GetDaysToExpire() const;
 };
 
 class Water : public Product {
@@ -44,6 +46,7 @@ private:
 public:
     Water(Product product, int daysToExpire);
     void Print() override;
+    int GetDaysToExpire();
 };
 
 class Eggs : public Product {
@@ -52,6 +55,7 @@ class Eggs : public Product {
 public:
     Eggs(Product product, int daysToExpire, int NumberOfEggs);
     void Print() override;
+    int GetDaysToExpire();
 };
 
 class Fish : public Product{

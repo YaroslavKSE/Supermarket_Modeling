@@ -136,6 +136,10 @@ int main() {
             supermarket.ViewByType(userInput[1]);
 
         }
+        if(userInput[0] == "Next" && userInput[1] == "day"){
+            supermarket.NextDay();
+        }
+
         if(command == "Exit"){
             break;
         }
