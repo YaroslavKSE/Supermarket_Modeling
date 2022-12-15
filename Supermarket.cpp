@@ -70,3 +70,15 @@ void Supermarket::NextDay() {
 //        Freezer.NextDay();
 //    }
 }
+
+void Supermarket::Take(const string& product, const string& name) {
+    for (auto & Shelve : Shelves) {
+        Shelve.RemoveProduct(product, name);
+    }
+    for (auto & Refrigerator : Refrigerators) {
+        Refrigerator.RemoveProduct(product, name);
+    }
+    for (auto & Freezer : Freezers) {
+        Freezer.RemoveProduct(product, name);
+    }
+}

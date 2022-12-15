@@ -281,6 +281,7 @@ CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.obj: D:/Projects_C++/Freez
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  D:/Projects_C++/Shelve.h \
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/vector \
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h \
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h \
@@ -561,7 +562,8 @@ CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.obj: D:/Projects_C++/
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h \
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h \
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h \
-  D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
+  D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc \
+  D:/Projects_C++/Shelve.h
 
 CMakeFiles/LAB_2_Supermarket_Modeling.dir/Shelve.cpp.obj: D:/Projects_C++/Shelve.cpp \
   D:/Projects_C++/Shelve.h \
@@ -847,8 +849,8 @@ CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.obj: D:/Projects_C++/S
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
-  D:/Projects_C++/Freezer.h \
-  D:/Projects_C++/Shelve.h
+  D:/Projects_C++/Shelve.h \
+  D:/Projects_C++/Freezer.h
 
 CMakeFiles/LAB_2_Supermarket_Modeling.dir/main.cpp.obj: D:/Projects_C++/main.cpp \
   D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale \
@@ -1313,6 +1315,8 @@ D:/Projects_C++/Freezer.h:
 
 D:/Projects_C++/Product.h:
 
+D:/Projects_C++/Shelve.h:
+
 D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc:
 
 D:/Projects_C++/Product.cpp:
@@ -1322,8 +1326,6 @@ D:/Projects_C++/Refrigerator.cpp:
 D:/Projects_C++/Refrigerator.h:
 
 D:/Projects_C++/Shelve.cpp:
-
-D:/Projects_C++/Shelve.h:
 
 D:/C++/CLion\ 2022.2.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility:
 

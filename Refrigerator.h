@@ -3,6 +3,7 @@
 
 #include "Product.h"
 #include <vector>
+
 using namespace std;
 
 class Refrigerator{
@@ -16,6 +17,8 @@ public:
     void Print();
 
     void NextDay();
+
+    void RemoveProduct(string product, string name);
 
 private:
     int temperature{};

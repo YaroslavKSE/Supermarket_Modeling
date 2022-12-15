@@ -37,5 +37,13 @@ void Refrigerator::NextDay() {
     }
 }
 
+void Refrigerator::RemoveProduct(string product, string name) {
+    for (int i = 0; i < Products.size(); ++i) {
+        if(Products[i]->GetName() == name){
+            Products.erase(Products.begin() + i);
+        }
+    }
+}
+
 
 Refrigerator::Refrigerator() = default;

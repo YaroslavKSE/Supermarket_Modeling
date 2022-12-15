@@ -2,11 +2,12 @@
 #define LAB_2_SUPERMARKET_MODELING_FREEZER_H
 
 #include "Product.h"
+#include "Shelve.h"
 #include <vector>
 
 using namespace std;
 
-class Freezer {
+class Freezer{
 public:
     Freezer(int temperature, vector<Product*> products);
 
@@ -17,6 +18,8 @@ public:
     void Print();
 
     void NextDay();
+
+    void RemoveProduct(string product, string name);
 
 private:
     int temperature{};

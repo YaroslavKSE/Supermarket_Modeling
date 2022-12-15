@@ -142,10 +142,18 @@ int main() {
             supermarket.NextDay();
             continue;
         }
+        if(userInput[0] == "Take"){
+            supermarket.Take(userInput[1], userInput[2]);
+        }
+
+        if(userInput[0] == "Set"){
+
+        }
 
         if(userInput[0] == "Exit"){
             break;
         }
+
     }
     return 0;
 }

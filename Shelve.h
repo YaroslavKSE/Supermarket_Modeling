@@ -17,6 +17,8 @@ public:
     void Print();
 
     void NextDay();
+
+    void RemoveProduct(string product, string name);
 };
 
 

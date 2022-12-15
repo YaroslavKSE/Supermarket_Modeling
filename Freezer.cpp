@@ -17,4 +17,12 @@ void Freezer::NextDay() {
     // may be needed in future
 }
 
+void Freezer::RemoveProduct(string product, string name) {
+    for (int i = 0; i < Products.size(); ++i) {
+        if(Products[i]->GetName() == name){
+            Products.erase(Products.begin() + i);
+        }
+    }
+}
+
 Freezer::Freezer() = default;

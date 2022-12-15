@@ -22,6 +22,7 @@ public:
     void View();
     void ViewByType(const string& containerType);
     void NextDay();
+    void Take(const string& product, const string& name);
 };
 
 
