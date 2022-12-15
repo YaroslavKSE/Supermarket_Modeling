@@ -18,6 +18,8 @@ public:
     void AddFridge(Refrigerator fridge);
     void AddFreezer(Freezer freezer);
     void AddShelve(Shelve shelve);
+    void View();
+    void ViewByType(const string& containerType);
 };
 
 

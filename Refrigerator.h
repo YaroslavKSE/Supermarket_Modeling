@@ -14,6 +14,8 @@ public:
 
     void AddProduct(Product* product);
 
+    void Print();
+
 private:
     int temperature{};
     vector<Product*> Products;

@@ -11,6 +11,7 @@ public:
     Shelve();
     explicit Shelve(vector<Product*> products);
     void AddProduct(Product* product);
+    void Print();
 };
 
 

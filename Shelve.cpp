@@ -11,3 +11,9 @@ void Shelve::AddProduct(Product* product)
 {
     Products.push_back(product);
 }
+
+void Shelve::Print() {
+    for (auto & Product : Products) {
+        Product->Print();
+    }
+}

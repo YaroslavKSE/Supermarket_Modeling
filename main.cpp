@@ -1,5 +1,4 @@
 #include <locale>
-#include <codecvt>
 #include <sstream>
 #include "Product.h"
 #include "Shelve.h"
@@ -38,10 +37,12 @@ Freezer FillFreezer(const vector<string> &record) {
         if (record[i] == "Salmon") {
             Product *salmon = new Fish(record[i], stof(record[i + 1]));
             freezer.AddProduct(salmon);
+            i = i + 1;
         }
         if (record[i] == "Pork") {
             Product *meat = new Meat(record[i], stof(record[i + 1]));
             freezer.AddProduct(meat);
+            i = i + 1;
         }
     }
     return freezer;
@@ -55,32 +56,39 @@ Shelve FillShelve(const vector<string> &record) {
             float weight = stof(record[i + 2]);
             Product *bread = new Bread(Product(record[i], weight), dueDate);
             shelve.AddProduct(bread);
+            i = i + 2;
         }
-        if (record[i] == "White Bread") {
-            int dueDate = stoi(record[i + 1]);
-            float weight = stof(record[i + 2]);
-            Product *bread = new Bread(Product(record[i], weight), dueDate);
+        if (record[i] == "\"White" && record[i+1] == "Bread\"") {
+            int dueDate = stoi(record[i + 2]);
+            float weight = stof(record[i + 3]);
+            Product *bread = new Bread(Product("White Bread", weight), dueDate);
             shelve.AddProduct(bread);
+            i = i + 3;
         }
         if (record[i] == "Domestos") {
             Product *soap = new Soap(record[i], stof(record[i + 1]));
             shelve.AddProduct(soap);
+            i = i + 1;
         }
         if (record[i] == "Gillette") {
             Product *soap = new Soap(record[i], stof(record[i + 1]));
             shelve.AddProduct(soap);
+            i = i + 1;
         }
         if (record[i] == "Dove") {
             Product *soap = new Soap(record[i], stof(record[i + 1]));
             shelve.AddProduct(soap);
+            i = i + 1;
         }
         if (record[i] == "Morshynska") {
             Product *water = new Water(Product(record[i], stof(record[i + 2])), stoi(record[i + 1]));
             shelve.AddProduct(water);
+            i = i + 2;
         }
         if (record[i] == "Buvette") {
             Product *water = new Water(Product(record[i], stof(record[i + 2])), stoi(record[i + 1]));
             shelve.AddProduct(water);
+            i = i + 2;
         }
     }
     return shelve;
@@ -103,8 +111,8 @@ int main() {
     FileReader fileReader("Products.txt");
     vector<string> records = fileReader.ReadText();
     Supermarket supermarket;
-    for (int i = 0; i < records.size(); ++i) {
-        vector<string> record = Split(records[i], ' ');
+    for (auto & i : records) {
+        vector<string> record = Split(i, ' ');
         if(record[0] == "Shelve"){
             supermarket.AddShelve(FillShelve(record));
         }
@@ -116,5 +124,21 @@ int main() {
         }
     }
 
+    while (true) {
+        cout << "Enter command:" << "\n";
+        string command;
+        getline(cin, command);
+        vector<string> userInput = Split(command, ' ');
+        if (command == "View") {
+            supermarket.View();
+        }
+        if(userInput[0] == "View" && !userInput[1].empty()){
+            supermarket.ViewByType(userInput[1]);
+
+        }
+        if(command == "Exit"){
+            break;
+        }
+    }
     return 0;
 }

@@ -8,4 +8,10 @@ void Refrigerator::AddProduct(Product *product) {
     Products.push_back(product);
 }
 
+void Refrigerator::Print() {
+    for (auto & Product : Products) {
+        Product->Print();
+    }
+}
+
 Refrigerator::Refrigerator() = default;

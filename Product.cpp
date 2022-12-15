@@ -12,6 +12,10 @@ float Product::GetWeight() {
     return Weight;
 }
 
+void Product::Print() {
+    cout << "Product:" << Name << " Weight:" <<to_string(Weight) << "\n";
+}
+
 Product::Product() = default;
 
 
@@ -20,6 +24,12 @@ Eggs::Eggs(Product product, int daysToExpire, int numberOfEggs){
     this -> Eggs::Weight = product.GetWeight();
     this -> DaysToExpire = daysToExpire;
     this -> NumberOfEggs = numberOfEggs;
+
+}
+
+void Eggs::Print() {
+    Product::Print();
+    cout << "Days To Expire:" << DaysToExpire << " Number of eggs:" << NumberOfEggs << "\n";
 
 }
 
@@ -35,8 +45,18 @@ Bread::Bread(Product product, int daysToExpire) {
     this -> DaysToExpire = daysToExpire;
 }
 
+void Bread::Print() {
+    Product::Print();
+    cout << "Days To Expire:" << DaysToExpire <<"\n" ;
+}
+
 Water::Water(Product product, int daysToExpire) {
     this -> Water::Name = product.GetName();
     this -> Water::Weight = product.GetWeight();
     this -> DaysToExpire = daysToExpire;
+}
+
+void Water::Print() {
+    Product::Print();
+    cout << "Days to expire: " << DaysToExpire << "\n";
 }
