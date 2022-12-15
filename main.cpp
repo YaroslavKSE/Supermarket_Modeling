@@ -141,8 +141,10 @@ int main() {
             supermarket.NextDay();
             continue;
         }
+
+        // Take from Shelve 1 Domestos 1
         if(userInput[0] == "Take"){
-            supermarket.Take(userInput[1], userInput[2]);
+            supermarket.Take(userInput[2], stoi(userInput[3]), userInput[4]);
         }
         // Add Shelve 1 "Soap Dove 0.45"
         if(userInput[0] == "Add"){
@@ -157,10 +159,35 @@ int main() {
                 supermarket.AddToExactFreezer(FillFreezer(userInput).GetFirstProduct(), stoi(userInput[2]));
             }
         }
+        // Set temperature Freezer 0 -10
         if(userInput[0] == "Set"){
-
+            supermarket.SetTemperature(userInput[2], stoi(userInput[3]), stoi(userInput[4]));
         }
 
+        // Move from Shelve 1 Domestos 1 to Shelve 2
+        if(userInput[0] == "Move"){
+            if(userInput[2] == "Shelve" && userInput[userInput.size() - 2] == "Shelve"){
+                supermarket.AddToExactShelve(FillShelve(userInput).GetFirstProduct(), stoi(userInput[userInput.size() - 1]));
+                supermarket.Take(userInput[2], stoi(userInput[3]), userInput[4]);
+                continue;
+            } else{
+                cout <<"You can't move this product from shelve" << "\n";
+            }
+            if(userInput[2] == "Refrigerator" && userInput[userInput.size() - 2] == "Refrigerator"){
+                supermarket.AddToExactFridge(FillFridge(userInput).GetFirstProduct(), stoi(userInput[userInput.size() - 1]));
+                supermarket.Take(userInput[2], stoi(userInput[3]), userInput[4]);
+                continue;
+            } else {
+                cout <<"You can't move this product from fridge" << "\n";
+            }
+            if(userInput[2] == "Freezer" && userInput[userInput.size() - 2] == "Freezer"){
+                supermarket.AddToExactFreezer(FillFreezer(userInput).GetFirstProduct(), stoi(userInput[userInput.size() - 1]));
+                supermarket.Take(userInput[2], stoi(userInput[3]), userInput[4]);
+                continue;
+            } else {
+                cout <<"You can't move this product from fridge" << "\n";
+            }
+        }
         if(userInput[0] == "Exit"){
             break;
         }

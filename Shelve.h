@@ -20,7 +20,7 @@ public:
 
     void NextDay();
 
-    void RemoveProduct(string product, string name);
+    void RemoveProduct(string name);
 };
 
 

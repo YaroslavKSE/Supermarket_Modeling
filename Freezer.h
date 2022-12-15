@@ -19,9 +19,11 @@ public:
 
     void NextDay();
 
+    void SetTemperature(int number);
+
     Product* GetFirstProduct();
 
-    void RemoveProduct(string product, string name);
+    void RemoveProduct(string name);
 
 private:
     int temperature{};

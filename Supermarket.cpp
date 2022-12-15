@@ -85,15 +85,24 @@ void Supermarket::NextDay() {
 //    }
 }
 
-void Supermarket::Take(const string& product, const string& name) {
-    for (auto & Shelve : Shelves) {
-        Shelve.RemoveProduct(product, name);
+void Supermarket::Take(const string& fromWhere, int number, const string& name) {
+    if(fromWhere == "Shelve"){
+        Shelves[number].RemoveProduct(name);
     }
-    for (auto & Refrigerator : Refrigerators) {
-        Refrigerator.RemoveProduct(product, name);
+    if(fromWhere == "Refrigerator"){
+        Refrigerators[number].RemoveProduct(name);
     }
-    for (auto & Freezer : Freezers) {
-        Freezer.RemoveProduct(product, name);
+    if(fromWhere == "Freezer"){
+        Freezers[number].RemoveProduct(name);
+    }
+}
+
+void Supermarket::SetTemperature(const string& fridgeOrFreezer, int position, int number) {
+    if(fridgeOrFreezer == "Freezer"){
+        Freezers[position].SetTemperature(number);
+    }
+    if(fridgeOrFreezer == "Refrigerator"){
+        Refrigerators[position].SetTemperature(number);
     }
 }
 

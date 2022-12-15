@@ -42,10 +42,11 @@ void Shelve::NextDay() {
 
 }
 
-void Shelve::RemoveProduct(string product, string name) {
+void Shelve::RemoveProduct(string name) {
     for (int i = 0; i < Products.size(); ++i) {
         if(Products[i]->GetName() == name){
             Products.erase(Products.begin() + i);
+            break;
         }
     }
 }

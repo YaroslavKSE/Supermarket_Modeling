@@ -37,16 +37,26 @@ void Refrigerator::NextDay() {
     }
 }
 
-void Refrigerator::RemoveProduct(string product, string name) {
+void Refrigerator::RemoveProduct(string name) {
     for (int i = 0; i < Products.size(); ++i) {
         if(Products[i]->GetName() == name){
             Products.erase(Products.begin() + i);
+            break;
         }
     }
 }
 
 Product *Refrigerator::GetFirstProduct() {
     return Products[0];
+}
+
+void Refrigerator::SetTemperature(int number) {
+    if (number > 10 || number < -5){
+        cout << "You can't set temperature above than 10 or less than -5" << "\n";
+    } else{
+        temperature = number;
+        cout << "Successfully set temperature to: " << number << "\n";
+    }
 }
 
 
