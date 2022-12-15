@@ -129,18 +129,21 @@ int main() {
         string command;
         getline(cin, command);
         vector<string> userInput = Split(command, ' ');
-        if (command == "View") {
+        if (userInput[0] == "View" && userInput.size() == 1) {
             supermarket.View();
+            continue;
         }
         if(userInput[0] == "View" && !userInput[1].empty()){
             supermarket.ViewByType(userInput[1]);
+            continue;
 
         }
         if(userInput[0] == "Next" && userInput[1] == "day"){
             supermarket.NextDay();
+            continue;
         }
 
-        if(command == "Exit"){
+        if(userInput[0] == "Exit"){
             break;
         }
     }

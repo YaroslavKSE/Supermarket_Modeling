@@ -1,0 +1,3 @@
+D:/Projects_C++/cmake-build-debug-coverage/CMakeFiles/LAB_2_Supermarket_Modeling.dir
+D:/Projects_C++/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
+D:/Projects_C++/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir

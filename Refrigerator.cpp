@@ -22,6 +22,7 @@ void Refrigerator::NextDay() {
             if(check->GetDaysToExpire() == 1){
                 check->Print();
                 Products.erase(Products.begin() + i);
+                continue;
             }
         }
         auto *check2 = dynamic_cast<Eggs*>(Product);
@@ -29,6 +30,7 @@ void Refrigerator::NextDay() {
             if(check2->GetDaysToExpire() == 1){
                 check2->Print();
                 Products.erase(Products.begin() + i);
+                continue;
             }
         }
         i++;
