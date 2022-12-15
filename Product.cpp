@@ -32,7 +32,7 @@ void Eggs::Print() {
 
 }
 
-int Eggs::GetDaysToExpire() {
+int Eggs::GetDaysToExpire() const {
     return DaysToExpire;
 }
 
@@ -70,4 +70,8 @@ Water::Water(Product product, int daysToExpire) {
 void Water::Print() {
     Product::Print();
     cout << "Days to expire: " << DaysToExpire << "\n";
+}
+
+int Water::GetDaysToExpire() const {
+    return DaysToExpire;
 }

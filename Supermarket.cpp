@@ -59,16 +59,14 @@ void Supermarket::ViewByType(const string& containerType) {
 }
 
 void Supermarket::NextDay() {
-//    for (int i = 0; i < Shelves.size(); ++i) {
-//        cout << "Shelve #" << i << "\n";
-//        Shelves[i].Print();
-//    }
-
-    for (int i = 0; i < Refrigerators.size(); ++i) {
-        vector<Product*> expired = Refrigerators[i].NextDay();
+    for (auto & Shelve : Shelves) {
+        Shelve.NextDay();
     }
-//    for (int i = 0; i < Freezers.size(); ++i) {
-//        cout << "Freezer #" << i << "\n";
-//        Freezers[i].Print();
+
+    for (auto & Refrigerator : Refrigerators) {
+        Refrigerator.NextDay();
+    }
+//    for (auto & Freezer : Freezers) {
+//        Freezer.NextDay();
 //    }
 }

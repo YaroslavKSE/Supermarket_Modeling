@@ -3,10 +3,9 @@
 
 #include "Product.h"
 #include <vector>
-
 using namespace std;
 
-class Refrigerator {
+class Refrigerator{
 public:
     Refrigerator(int temperature, vector<Product*> products);
 
@@ -16,7 +15,7 @@ public:
 
     void Print();
 
-    vector<Product*> NextDay();
+    void NextDay();
 
 private:
     int temperature{};

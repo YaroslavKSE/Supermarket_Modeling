@@ -6,12 +6,17 @@
 #include "Product.h"
 class Shelve
 {
+protected:
     vector<Product*> Products;
 public:
     Shelve();
     explicit Shelve(vector<Product*> products);
+
     void AddProduct(Product* product);
+
     void Print();
+
+    void NextDay();
 };
 
 

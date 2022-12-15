@@ -46,7 +46,7 @@ private:
 public:
     Water(Product product, int daysToExpire);
     void Print() override;
-    int GetDaysToExpire();
+    int GetDaysToExpire() const;
 };
 
 class Eggs : public Product {
@@ -55,7 +55,7 @@ class Eggs : public Product {
 public:
     Eggs(Product product, int daysToExpire, int NumberOfEggs);
     void Print() override;
-    int GetDaysToExpire();
+    int GetDaysToExpire() const;
 };
 
 class Fish : public Product{

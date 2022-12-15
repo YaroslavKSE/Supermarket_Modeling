@@ -14,25 +14,25 @@ void Refrigerator::Print() {
     }
 }
 
-vector<Product *> Refrigerator::NextDay() {
-    vector<Product*> nextDayProducts;
+void Refrigerator::NextDay() {
+    int i = 0;
     for (auto & Product : Products) {
         auto *check = dynamic_cast<Milk*>(Product);
         if(nullptr != dynamic_cast<Milk*>(Product)){
             if(check->GetDaysToExpire() == 1){
                 check->Print();
-                nextDayProducts.push_back(check);
+                Products.erase(Products.begin() + i);
             }
         }
-        auto *checkEggs = dynamic_cast<Eggs*>(Product);
+        auto *check2 = dynamic_cast<Eggs*>(Product);
         if(nullptr != dynamic_cast<Eggs*>(Product)){
-            if(checkEggs->GetDaysToExpire() == 1){
-                checkEggs->Print();
-                nextDayProducts.push_back(checkEggs);
+            if(check2->GetDaysToExpire() == 1){
+                check2->Print();
+                Products.erase(Products.begin() + i);
             }
         }
+        i++;
     }
-    return nextDayProducts;
 }
 
 

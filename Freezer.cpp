@@ -13,4 +13,8 @@ void Freezer::Print() {
     }
 }
 
+void Freezer::NextDay() {
+    // may be needed in future
+}
+
 Freezer::Freezer() = default;

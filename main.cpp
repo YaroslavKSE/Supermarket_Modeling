@@ -12,7 +12,7 @@ Refrigerator FillFridge(const vector<string> &record) {
     for (int i = 0; i < record.size(); ++i) {
         if (record[i] == "Milk") {
             int dueDate = stoi(record[i + 1]);
-            string name = record[i + 2];
+            const string& name = record[i + 2];
             float weight = stof(record[i + 3]);
             Product *milk = new Milk(Product(name, weight), dueDate);
             fridge.AddProduct(milk);
@@ -20,7 +20,7 @@ Refrigerator FillFridge(const vector<string> &record) {
         }
         if (record[i] == "Eggs") {
             int dueDate = stoi(record[i + 1]);
-            string name = record[i + 2];
+            const string& name = record[i + 2];
             float weight = stof(record[i + 3]);
             int number = stoi(record[i + 3]);
             Product *milk = new Eggs(Product(name, weight), dueDate, number);
