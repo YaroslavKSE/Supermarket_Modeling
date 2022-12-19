@@ -2,29 +2,31 @@
 #define LAB_2_SUPERMARKET_MODELING_REFRIGERATOR_H
 
 #include "Product.h"
+#include "Shelve.h"
 #include <vector>
 
 using namespace std;
 
-class Refrigerator{
+class Refrigerator : public Shelve{
 public:
     Refrigerator(int temperature, vector<Product*> products);
 
     Refrigerator();
 
-    void AddProduct(Product* product);
+    void AddProduct(Product* product) override;
 
-    Product* GetFirstProduct();
-    void Print();
+    Product* GetFirstProduct() override;
 
-    void NextDay();
+    void Print() override;
 
-    void RemoveProduct(string name);
+    void NextDay() override;
+
+    void RemoveProduct(const string& name) override;
 
     void SetTemperature(int number);
 
 private:
-    int temperature{};
+    int temperature;
     vector<Product*> Products;
 
 };

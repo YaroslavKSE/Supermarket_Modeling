@@ -12,15 +12,15 @@ public:
     Shelve();
     explicit Shelve(vector<Product*> products);
 
-    void AddProduct(Product* product);
+    virtual void AddProduct(Product* product);
 
-    Product* GetFirstProduct();
+    virtual Product* GetFirstProduct();
 
-    void Print();
+    virtual void Print();
 
-    void NextDay();
+    virtual void NextDay();
 
-    void RemoveProduct(const string& name);
+    virtual void RemoveProduct(const string& name);
 };
 
 

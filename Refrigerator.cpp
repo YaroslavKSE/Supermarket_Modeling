@@ -27,7 +27,7 @@ void Refrigerator::NextDay() {
     }
 }
 
-void Refrigerator::RemoveProduct(string name) {
+void Refrigerator::RemoveProduct(const string& name) {
     for (int i = 0; i < Products.size(); ++i) {
         if(Products[i]->GetName() == name){
             Products.erase(Products.begin() + i);

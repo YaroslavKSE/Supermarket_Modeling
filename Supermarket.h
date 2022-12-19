@@ -19,9 +19,9 @@ public:
     void AddFridge(const Refrigerator& fridge);
     void AddFreezer(const Freezer& freezer);
     void AddShelve(const Shelve& shelve);
-    void AddToExactShelve(Product *const product, int number);
-    void AddToExactFridge(Product *const product, int number);
-    void AddToExactFreezer(Product *const product, int number);
+    void AddToExactShelve(Product *product, int number);
+    void AddToExactFridge(Product *product, int number);
+    void AddToExactFreezer(Product *product, int number);
     void SetTemperature(const string& fridgeOrFreezer, int position, int number);
     void View();
     void ViewByType(const string& containerType);

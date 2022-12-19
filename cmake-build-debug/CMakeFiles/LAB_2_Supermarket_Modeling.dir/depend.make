@@ -15,7 +15,8 @@ CMakeFiles/LAB_2_Supermarket_Modeling.dir/Product.cpp.o: \
 CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.o: \
  ../Product.h \
  ../Refrigerator.cpp \
- ../Refrigerator.h
+ ../Refrigerator.h \
+ ../Shelve.h
 CMakeFiles/LAB_2_Supermarket_Modeling.dir/Shelve.cpp.o: \
  ../Product.h \
  ../Shelve.cpp \
