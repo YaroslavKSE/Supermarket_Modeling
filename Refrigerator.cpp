@@ -17,21 +17,11 @@ void Refrigerator::Print() {
 void Refrigerator::NextDay() {
     int i = 0;
     for (auto & Product : Products) {
-        auto *check = dynamic_cast<Milk*>(Product);
-        if(nullptr != dynamic_cast<Milk*>(Product)){
-            if(check->GetDaysToExpire() == 1){
-                check->Print();
-                Products.erase(Products.begin() + i);
-                continue;
-            }
-        }
-        auto *check2 = dynamic_cast<Eggs*>(Product);
-        if(nullptr != dynamic_cast<Eggs*>(Product)){
-            if(check2->GetDaysToExpire() == 1){
-                check2->Print();
-                Products.erase(Products.begin() + i);
-                continue;
-            }
+        auto *check = dynamic_cast<DueDateChecker*>(Product);
+        if(nullptr != dynamic_cast<DueDateChecker*>(Product) && check->IsValid()){
+            check->Print();
+            Products.erase(Products.begin() + i);
+            continue;
         }
         i++;
     }

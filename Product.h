@@ -23,39 +23,40 @@ public:
     virtual ~Product();
 };
 
-class Milk : public Product {
-private:
+class DueDateChecker: public Product{
+protected:
     int DaysToExpire;
 public:
-    Milk(Product product, int daysToExpire);
-    int GetDaysToExpire() const;
+    virtual bool IsValid();
+    void Print() override;
 };
 
-class Bread : public Product {
+class Milk : public DueDateChecker{
 private:
-    int DaysToExpire;
+public:
+    Milk(Product product, int daysToExpire);
+    void Print() override;
+
+};
+
+class Bread : public DueDateChecker{
+
 public:
     Bread(Product product, int daysToExpire);
     void Print() override;
-    int GetDaysToExpire() const;
 };
 
-class Water : public Product {
-private:
-    int DaysToExpire;
+class Water : public DueDateChecker{
 public:
     Water(Product product, int daysToExpire);
     void Print() override;
-    int GetDaysToExpire() const;
 };
 
-class Eggs : public Product {
-    int DaysToExpire;
+class Eggs : public DueDateChecker{
     int NumberOfEggs;
 public:
     Eggs(Product product, int daysToExpire, int NumberOfEggs);
     void Print() override;
-    int GetDaysToExpire() const;
 };
 
 class Fish : public Product{
@@ -72,5 +73,7 @@ class Soap : public Product{
 public:
     using Product::Product;
 };
+
+
 
 #endif //LAB_2_SUPERMARKET_MODELING_PRODUCT_H

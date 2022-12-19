@@ -19,59 +19,63 @@ Product::Product() = default;
 
 
 Eggs::Eggs(Product product, int daysToExpire, int numberOfEggs){
-    this -> Eggs::Name = product.GetName();
-    this -> Eggs::Weight = product.GetWeight();
-    this -> DaysToExpire = daysToExpire;
+    this -> DueDateChecker::Name = product.GetName();
+    this -> DueDateChecker::Weight = product.GetWeight();
     this -> NumberOfEggs = numberOfEggs;
-
+    DueDateChecker::DaysToExpire = daysToExpire;
 }
 
 void Eggs::Print() {
-    Product::Print();
+    DueDateChecker::Print();
     cout << "Days To Expire:" << DaysToExpire << " Number of eggs:" << NumberOfEggs << "\n";
 
 }
 
-int Eggs::GetDaysToExpire() const {
-    return DaysToExpire;
-}
 
 Milk::Milk(Product product, int daysToExpire) {
     this -> Milk::Name = product.GetName();
     this -> Milk::Weight = product.GetWeight();
-    this -> DaysToExpire = daysToExpire;
+    DueDateChecker::DaysToExpire = daysToExpire;
 }
 
-int Milk::GetDaysToExpire() const {
-    return DaysToExpire;
-}
 
-Bread::Bread(Product product, int daysToExpire) {
-    this -> Bread::Name = product.GetName();
-    this -> Bread::Weight = product.GetWeight();
-    this -> DaysToExpire = daysToExpire;
-}
-
-void Bread::Print() {
-    Product::Print();
+void Milk::Print() {
+    DueDateChecker::Print();
     cout << "Days To Expire:" << DaysToExpire <<"\n" ;
 }
 
-int Bread::GetDaysToExpire() const {
-    return DaysToExpire;
+Bread::Bread(Product product, int daysToExpire) {
+    this -> DueDateChecker::Name = product.GetName();
+    this -> DueDateChecker::Weight = product.GetWeight();
+    DueDateChecker::DaysToExpire = daysToExpire;
+}
+
+void Bread::Print() {
+    DueDateChecker::Print();
+    cout << "Days To Expire:" << DaysToExpire <<"\n" ;
 }
 
 Water::Water(Product product, int daysToExpire) {
-    this -> Water::Name = product.GetName();
-    this -> Water::Weight = product.GetWeight();
-    this -> DaysToExpire = daysToExpire;
+    this -> DueDateChecker::Name = product.GetName();
+    this -> DueDateChecker::Weight = product.GetWeight();
+    DueDateChecker::DaysToExpire = daysToExpire;
 }
 
 void Water::Print() {
-    Product::Print();
+    DueDateChecker::Print();
     cout << "Days to expire: " << DaysToExpire << "\n";
 }
 
-int Water::GetDaysToExpire() const {
-    return DaysToExpire;
+
+bool DueDateChecker::IsValid() {
+    if (DaysToExpire == 1){
+        return true;
+    }
+    return false;
 }
+
+void DueDateChecker::Print() {
+    Product::Print();
+}
+
+
