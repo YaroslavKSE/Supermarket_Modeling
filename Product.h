@@ -8,7 +8,7 @@ using namespace std;
 class Product {
 protected:
     string Name;
-    float Weight{};
+    float Weight;
 
 public:
     Product();

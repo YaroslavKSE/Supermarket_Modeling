@@ -122,6 +122,12 @@
 		<Unit filename="/cygdrive/c/С/Supermarket_Modeling/Supermarket.h">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/С/Supermarket_Modeling/Truck.cpp">
+			<Option target="LAB_2_Supermarket_Modeling"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/С/Supermarket_Modeling/Truck.h">
+			<Option target="LAB_2_Supermarket_Modeling"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/С/Supermarket_Modeling/main.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>

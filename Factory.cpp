@@ -11,7 +11,7 @@ void Factory::GenerateProducts() {
     for (int n = 0; n < 20; ++n) {
         int random = dist(gen);
         if(TypesOfProduct[random] == "Bread"){
-            float weight = float(dist(gen)) / 10 * 3;
+            float weight = float(dist(gen)) / 10 * 3 + 0.2;
             Product* bread = new Bread(Product(BreadNames[dist(gen)], weight), dist(gen));
             Stock.push_back(bread);
             continue;
@@ -23,35 +23,38 @@ void Factory::GenerateProducts() {
             continue;
         }
         if(TypesOfProduct[random] == "Milk"){
-            float weight = float(dist(gen)) / 10 * 3;
+            float weight = float(dist(gen)) / 10 * 3 + 0.3;
             int days = dist(gen) * 4 + 1;
             Product* milk = new Milk(Product(MilkNames[dist(gen)], weight), days);
             Stock.push_back(milk);
             continue;
         }
         if(TypesOfProduct[random] == "Eggs"){
-            float weight = float(dist(gen))/ 10;
+            float weight = float(dist(gen))/ 10 + 0.05;
             int days = dist(gen) * 4 + 1;
             int number = dist(gen) * 2 + 6;
             Product* eggs = new Eggs(Product(EggsNames[dist(gen)], weight), days, number);
             Stock.push_back(eggs);
             continue;
         }
-//        if(TypesOfProduct[random] == "Fish"){
-//            Product* fish = new Fish("das", 2);
-//            Stock.push_back(fish);
-//            continue;
-//        }
-//        if(TypesOfProduct[random] == "Meat"){
-//            Product* meat = new Meat("das", 2);
-//            Stock.push_back(meat);
-//            continue;
-//        }
-//        if(TypesOfProduct[random] == "Soap"){
-//            Product* soap = new Soap("das", 2);
-//            Stock.push_back(soap);
-//            continue;
-//        }
+        if(TypesOfProduct[random] == "Fish"){
+            float weight = float(dist(gen))/ 10 * 3 + 0.2;
+            Product* fish = new Fish(FishNames[dist(gen)], weight);
+            Stock.push_back(fish);
+            continue;
+        }
+        if(TypesOfProduct[random] == "Meat"){
+            float weight = float(dist(gen))/ 10 * 4 + 0.2;
+            Product* meat = new Meat(MeatNames[dist(gen)], weight);
+            Stock.push_back(meat);
+            continue;
+        }
+        if(TypesOfProduct[random] == "Soap"){
+            float weight = float(dist(gen))/ 10 * 3 + 0.1;
+            Product* soap = new Soap(SoapNames[dist(gen)], weight);
+            Stock.push_back(soap);
+            continue;
+        }
     }
 
 }
@@ -84,4 +87,23 @@ void Factory::FillNames() {
     BreadNames.emplace_back("Borodynskiy"); BreadNames.emplace_back("Finskiy");
     BreadNames.emplace_back("Lvivskiy"); BreadNames.emplace_back("Rosilini");
     BreadNames.emplace_back("Domashiy");
+    // FillFish
+    FishNames.emplace_back("Salmon"); FishNames.emplace_back("Tuna");
+    FishNames.emplace_back("Tuna"); FishNames.emplace_back("Schuka");
+    FishNames.emplace_back("Hek"); FishNames.emplace_back("Forel");
+    FishNames.emplace_back("Dorado");
+    // FillMeat
+    MeatNames.emplace_back("Pork"); MeatNames.emplace_back("Veal");
+    MeatNames.emplace_back("Mutton"); MeatNames.emplace_back("Chicken");
+    MeatNames.emplace_back("Beef"); MeatNames.emplace_back("Venison");
+    MeatNames.emplace_back("Rabbit");
+    // FillSoap
+    SoapNames.emplace_back("Dove"); SoapNames.emplace_back("Domestos");
+    SoapNames.emplace_back("Mr.Proper"); SoapNames.emplace_back("Mr.Muscle");
+    SoapNames.emplace_back("Palmolive"); SoapNames.emplace_back("Nivea");
+    SoapNames.emplace_back("HeadAndShoulders");
+}
+
+vector<Product *> Factory::GetStock() {
+    return Stock;
 }

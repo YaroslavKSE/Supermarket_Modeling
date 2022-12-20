@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.o"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Shelve.cpp.o"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.o"
+  "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.o"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/main.cpp.o"
   "LAB_2_Supermarket_Modeling.exe"
   "LAB_2_Supermarket_Modeling.pdb"

@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/С/Supermarket_Modeling/Refrigerator.cpp" "/cygdrive/c/С/Supermarket_Modeling/cmake-build-debug/CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.o"
   "/cygdrive/c/С/Supermarket_Modeling/Shelve.cpp" "/cygdrive/c/С/Supermarket_Modeling/cmake-build-debug/CMakeFiles/LAB_2_Supermarket_Modeling.dir/Shelve.cpp.o"
   "/cygdrive/c/С/Supermarket_Modeling/Supermarket.cpp" "/cygdrive/c/С/Supermarket_Modeling/cmake-build-debug/CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.o"
+  "/cygdrive/c/С/Supermarket_Modeling/Truck.cpp" "/cygdrive/c/С/Supermarket_Modeling/cmake-build-debug/CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.o"
   "/cygdrive/c/С/Supermarket_Modeling/main.cpp" "/cygdrive/c/С/Supermarket_Modeling/cmake-build-debug/CMakeFiles/LAB_2_Supermarket_Modeling.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

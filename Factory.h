@@ -15,11 +15,15 @@ private:
     vector<string> WaterNames;
     vector<string> EggsNames;
     vector<string> BreadNames;
+    vector<string> FishNames;
+    vector<string> MeatNames;
+    vector<string> SoapNames;
 public:
     Factory();
     void GenerateProducts();
     void FillProducts();
     void FillNames();
+    vector<Product*> GetStock();
 };
 
 

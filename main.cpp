@@ -7,6 +7,7 @@
 #include "Freezer.h"
 #include "Supermarket.h"
 #include "Factory.h"
+#include "Truck.h"
 
 Refrigerator FillFridge(const vector<string> &record) {
     Refrigerator fridge;
@@ -110,6 +111,9 @@ vector<string> Split(const string &line, char delim) {
 int main() {
     Factory factory;
     factory.GenerateProducts();
+    Truck truck;
+    truck.SetMaxCapacity(20);
+    truck.FillTruck(factory.GetStock());
     FileReader fileReader("Products.txt");
     vector<string> records = fileReader.ReadText();
     Supermarket supermarket;

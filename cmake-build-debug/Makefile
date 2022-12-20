@@ -297,6 +297,30 @@ Supermarket.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.s
 .PHONY : Supermarket.cpp.s
 
+Truck.o: Truck.cpp.o
+.PHONY : Truck.o
+
+# target to build an object file
+Truck.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.o
+.PHONY : Truck.cpp.o
+
+Truck.i: Truck.cpp.i
+.PHONY : Truck.i
+
+# target to preprocess a source file
+Truck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.i
+.PHONY : Truck.cpp.i
+
+Truck.s: Truck.cpp.s
+.PHONY : Truck.s
+
+# target to generate assembly for a file
+Truck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.s
+.PHONY : Truck.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -351,6 +375,9 @@ help:
 	@echo "... Supermarket.o"
 	@echo "... Supermarket.i"
 	@echo "... Supermarket.s"
+	@echo "... Truck.o"
+	@echo "... Truck.i"
+	@echo "... Truck.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
