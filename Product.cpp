@@ -19,14 +19,14 @@ Product::Product() = default;
 
 
 Eggs::Eggs(Product product, int daysToExpire, int numberOfEggs){
-    this -> DueDateChecker::Name = product.GetName();
-    this -> DueDateChecker::Weight = product.GetWeight();
+    this -> Checker::Name = product.GetName();
+    this -> Checker::Weight = product.GetWeight();
     this -> NumberOfEggs = numberOfEggs;
-    DueDateChecker::DaysToExpire = daysToExpire;
+    Checker::DaysToExpire = daysToExpire;
 }
 
 void Eggs::Print() {
-    DueDateChecker::Print();
+    Checker::Print();
     cout << "Days To Expire:" << DaysToExpire << " Number of eggs:" << NumberOfEggs << "\n";
 
 }
@@ -35,46 +35,46 @@ void Eggs::Print() {
 Milk::Milk(Product product, int daysToExpire) {
     this -> Milk::Name = product.GetName();
     this -> Milk::Weight = product.GetWeight();
-    DueDateChecker::DaysToExpire = daysToExpire;
+    Checker::DaysToExpire = daysToExpire;
 }
 
 
 void Milk::Print() {
-    DueDateChecker::Print();
+    Checker::Print();
     cout << "Days To Expire:" << DaysToExpire <<"\n" ;
 }
 
 Bread::Bread(Product product, int daysToExpire) {
-    this -> DueDateChecker::Name = product.GetName();
-    this -> DueDateChecker::Weight = product.GetWeight();
-    DueDateChecker::DaysToExpire = daysToExpire;
+    this -> Checker::Name = product.GetName();
+    this -> Checker::Weight = product.GetWeight();
+    Checker::DaysToExpire = daysToExpire;
 }
 
 void Bread::Print() {
-    DueDateChecker::Print();
+    Checker::Print();
     cout << "Days To Expire:" << DaysToExpire <<"\n" ;
 }
 
 Water::Water(Product product, int daysToExpire) {
-    this -> DueDateChecker::Name = product.GetName();
-    this -> DueDateChecker::Weight = product.GetWeight();
-    DueDateChecker::DaysToExpire = daysToExpire;
+    this -> Checker::Name = product.GetName();
+    this -> Checker::Weight = product.GetWeight();
+    Checker::DaysToExpire = daysToExpire;
 }
 
 void Water::Print() {
-    DueDateChecker::Print();
+    Checker::Print();
     cout << "Days to expire: " << DaysToExpire << "\n";
 }
 
 
-bool DueDateChecker::IsValid() {
+bool Checker::IsValid() {
     if (DaysToExpire == 1){
         return true;
     }
     return false;
 }
 
-void DueDateChecker::Print() {
+void Checker::Print() {
     Product::Print();
 }
 

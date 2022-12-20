@@ -13,6 +13,7 @@ public:
     Truck();
     void FillTruck(vector<Product*> products);
     void SetMaxCapacity(float number);
+    vector<Product*> UnLoad();
 };
 
 

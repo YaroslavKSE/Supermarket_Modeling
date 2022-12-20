@@ -19,8 +19,8 @@ void Shelve::Print() {
 void Shelve::NextDay() {
     int i = 0;
     for (auto & Product : Products) {
-        auto *check = dynamic_cast<DueDateChecker*>(Product);
-        if(nullptr != dynamic_cast<DueDateChecker*>(Product) && check->IsValid()){
+        auto *check = dynamic_cast<Checker*>(Product);
+        if(nullptr != dynamic_cast<Checker*>(Product) && check->IsValid()){
             check->Print();
             Products.erase(Products.begin() + i);
             continue;

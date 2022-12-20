@@ -117,6 +117,9 @@ int main() {
     FileReader fileReader("Products.txt");
     vector<string> records = fileReader.ReadText();
     Supermarket supermarket;
+    for (int i = 0; i < truck.UnLoad().size(); ++i) {
+
+    }
     for (auto & i : records) {
         vector<string> record = Split(i, ' ');
         if(record[0] == "Shelve"){

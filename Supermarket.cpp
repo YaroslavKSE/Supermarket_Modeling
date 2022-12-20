@@ -106,4 +106,8 @@ void Supermarket::SetTemperature(const string& fridgeOrFreezer, int position, in
     }
 }
 
+void Supermarket::AddProduct(Product* product) {
+
+}
+
 

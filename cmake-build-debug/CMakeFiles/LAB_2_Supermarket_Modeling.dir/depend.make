@@ -32,6 +32,10 @@ CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.o: \
  ../Shelve.h \
  ../Supermarket.cpp \
  ../Supermarket.h
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.o: \
+ ../Product.h \
+ ../Truck.cpp \
+ ../Truck.h
 CMakeFiles/LAB_2_Supermarket_Modeling.dir/main.cpp.o: \
  ../Factory.h \
  ../FileReader.h \
@@ -40,4 +44,5 @@ CMakeFiles/LAB_2_Supermarket_Modeling.dir/main.cpp.o: \
  ../Refrigerator.h \
  ../Shelve.h \
  ../Supermarket.h \
+ ../Truck.h \
  ../main.cpp

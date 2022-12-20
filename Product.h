@@ -23,15 +23,16 @@ public:
     virtual ~Product();
 };
 
-class DueDateChecker: public Product{
+class Checker: public Product{
 protected:
     int DaysToExpire;
+    char placeToPut;
 public:
     virtual bool IsValid();
     void Print() override;
 };
 
-class Milk : public DueDateChecker{
+class Milk : public Checker{
 private:
 public:
     Milk(Product product, int daysToExpire);
@@ -39,20 +40,20 @@ public:
 
 };
 
-class Bread : public DueDateChecker{
+class Bread : public Checker{
 
 public:
     Bread(Product product, int daysToExpire);
     void Print() override;
 };
 
-class Water : public DueDateChecker{
+class Water : public Checker{
 public:
     Water(Product product, int daysToExpire);
     void Print() override;
 };
 
-class Eggs : public DueDateChecker{
+class Eggs : public Checker{
     int NumberOfEggs;
 public:
     Eggs(Product product, int daysToExpire, int NumberOfEggs);
