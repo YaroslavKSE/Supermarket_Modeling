@@ -8,6 +8,8 @@ class Shelve
 {
 protected:
     vector<Product*> Products;
+    int Capacity = 0;
+    const int maxSize = 7;
 public:
     Shelve();
     explicit Shelve(vector<Product*> products);

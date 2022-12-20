@@ -80,12 +80,12 @@ clean: CMakeFiles/LAB_2_Supermarket_Modeling.dir/clean
 CMakeFiles/LAB_2_Supermarket_Modeling.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LAB_2_Supermarket_Modeling.dir\build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LAB_2_Supermarket_Modeling.dir\build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects_C++\cmake-build-debug-coverage\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target LAB_2_Supermarket_Modeling"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Projects_C++\cmake-build-debug-coverage\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target LAB_2_Supermarket_Modeling"
 .PHONY : CMakeFiles/LAB_2_Supermarket_Modeling.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LAB_2_Supermarket_Modeling.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects_C++\cmake-build-debug-coverage\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects_C++\cmake-build-debug-coverage\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LAB_2_Supermarket_Modeling.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects_C++\cmake-build-debug-coverage\CMakeFiles 0
 .PHONY : CMakeFiles/LAB_2_Supermarket_Modeling.dir/rule

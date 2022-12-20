@@ -20,6 +20,6 @@ void Truck::SetMaxCapacity(float number) {
     maxCapacity = number;
 }
 
-vector<Product *> Truck::UnLoad() {
+vector<Product*> Truck::UnLoad() {
     return productsToDeliver;
 }

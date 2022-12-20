@@ -9,7 +9,6 @@ class Product {
 protected:
     string Name;
     float Weight;
-
 public:
     Product();
 
@@ -18,7 +17,6 @@ public:
     string GetName();
 
     float GetWeight() const;
-
     virtual void Print();
     virtual ~Product();
 };
@@ -26,14 +24,15 @@ public:
 class Checker: public Product{
 protected:
     int DaysToExpire;
-    char placeToPut;
 public:
+    using Product::Product;
     virtual bool IsValid();
     void Print() override;
+    char placeToPut;
+
 };
 
 class Milk : public Checker{
-private:
 public:
     Milk(Product product, int daysToExpire);
     void Print() override;
@@ -41,7 +40,6 @@ public:
 };
 
 class Bread : public Checker{
-
 public:
     Bread(Product product, int daysToExpire);
     void Print() override;
@@ -60,19 +58,19 @@ public:
     void Print() override;
 };
 
-class Fish : public Product{
+class Fish : public Checker {
 public:
-    using Product::Product;
+    explicit Fish(Product product);
 };
 
-class Meat : public Product{
+class Meat : public Checker{
 public:
-    using Product::Product;
+    explicit Meat(Product product);
 };
 
-class Soap : public Product{
+class Soap : public Checker{
 public:
-    using Product::Product;
+    explicit Soap(Product product);
 };
 
 

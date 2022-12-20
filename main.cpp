@@ -37,12 +37,12 @@ Freezer FillFreezer(const vector<string> &record) {
     Freezer freezer;
     for (int i = 0; i < record.size(); ++i) {
         if (record[i] == "Salmon") {
-            Product *salmon = new Fish(record[i], stof(record[i + 1]));
+            Product *salmon = new Fish(Product(record[i], stof(record[i + 1])));
             freezer.AddProduct(salmon);
             i = i + 1;
         }
         if (record[i] == "Pork") {
-            Product *meat = new Meat(record[i], stof(record[i + 1]));
+            Product *meat = new Meat(Product(record[i], stof(record[i + 1])));
             freezer.AddProduct(meat);
             i = i + 1;
         }
@@ -68,17 +68,17 @@ Shelve FillShelve(const vector<string> &record) {
             i = i + 3;
         }
         if (record[i] == "Domestos") {
-            Product *soap = new Soap(record[i], stof(record[i + 1]));
+            Product *soap = new Soap(Product(record[i], stof(record[i + 1])));
             shelve.AddProduct(soap);
             i = i + 1;
         }
         if (record[i] == "Gillette") {
-            Product *soap = new Soap(record[i], stof(record[i + 1]));
+            Product *soap = new Soap(Product(record[i], stof(record[i + 1])));
             shelve.AddProduct(soap);
             i = i + 1;
         }
         if (record[i] == "Dove") {
-            Product *soap = new Soap(record[i], stof(record[i + 1]));
+            Product *soap = new Soap(Product(record[i], stof(record[i + 1])));
             shelve.AddProduct(soap);
             i = i + 1;
         }
@@ -116,10 +116,8 @@ int main() {
     truck.FillTruck(factory.GetStock());
     FileReader fileReader("Products.txt");
     vector<string> records = fileReader.ReadText();
+    vector<Product*> deliverProducts = truck.UnLoad();
     Supermarket supermarket;
-    for (int i = 0; i < truck.UnLoad().size(); ++i) {
-
-    }
     for (auto & i : records) {
         vector<string> record = Split(i, ' ');
         if(record[0] == "Shelve"){
@@ -131,6 +129,9 @@ int main() {
         if(record[0] == "Freezer"){
             supermarket.AddFreezer(FillFreezer(record));
         }
+    }
+    for (auto & deliverProduct : deliverProducts) {
+        supermarket.AddProduct(deliverProduct);
     }
     while (true) {
         cout << "Enter command:" << "\n";

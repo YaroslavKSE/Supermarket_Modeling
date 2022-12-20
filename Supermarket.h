@@ -14,7 +14,6 @@ private:
     vector<Shelve> Shelves;
 public:
     Supermarket();
-
     Supermarket(const vector<Refrigerator>& refrigerators, const vector<Freezer>& freezers, const vector<Shelve>& shelves);
     void AddFridge(const Refrigerator& fridge);
     void AddFreezer(const Freezer& freezer);

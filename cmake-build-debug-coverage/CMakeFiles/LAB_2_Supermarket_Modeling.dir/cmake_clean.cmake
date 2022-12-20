@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.obj"
+  "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.obj.d"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/FileReader.cpp.obj"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/FileReader.cpp.obj.d"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.obj"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Shelve.cpp.obj.d"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.obj"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.obj.d"
+  "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.obj"
+  "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.obj.d"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/main.cpp.obj"
   "CMakeFiles/LAB_2_Supermarket_Modeling.dir/main.cpp.obj.d"
   "LAB_2_Supermarket_Modeling.exe"

@@ -15,6 +15,7 @@ void Product::Print() {
     cout << "Product:" << Name << " Weight:" <<to_string(Weight) << "\n";
 }
 
+
 Product::Product() = default;
 
 
@@ -23,6 +24,7 @@ Eggs::Eggs(Product product, int daysToExpire, int numberOfEggs){
     this -> Checker::Weight = product.GetWeight();
     this -> NumberOfEggs = numberOfEggs;
     Checker::DaysToExpire = daysToExpire;
+    placeToPut = 'R';
 }
 
 void Eggs::Print() {
@@ -36,6 +38,7 @@ Milk::Milk(Product product, int daysToExpire) {
     this -> Milk::Name = product.GetName();
     this -> Milk::Weight = product.GetWeight();
     Checker::DaysToExpire = daysToExpire;
+    placeToPut = 'R';
 }
 
 
@@ -48,6 +51,7 @@ Bread::Bread(Product product, int daysToExpire) {
     this -> Checker::Name = product.GetName();
     this -> Checker::Weight = product.GetWeight();
     Checker::DaysToExpire = daysToExpire;
+    placeToPut = 'S';
 }
 
 void Bread::Print() {
@@ -59,6 +63,7 @@ Water::Water(Product product, int daysToExpire) {
     this -> Checker::Name = product.GetName();
     this -> Checker::Weight = product.GetWeight();
     Checker::DaysToExpire = daysToExpire;
+    placeToPut = 'S';
 }
 
 void Water::Print() {
@@ -66,6 +71,23 @@ void Water::Print() {
     cout << "Days to expire: " << DaysToExpire << "\n";
 }
 
+Fish::Fish(Product product) {
+    this -> Name = product.GetName();
+    this -> Weight = product.GetWeight();
+    placeToPut = 'F';
+}
+
+Meat::Meat(Product product) {
+    this -> Name = product.GetName();
+    this -> Weight = product.GetWeight();
+    placeToPut = 'F';
+}
+
+Soap::Soap(Product product) {
+    this -> Name = product.GetName();
+    this -> Weight = product.GetWeight();
+    placeToPut = 'S';
+}
 
 bool Checker::IsValid() {
     if (DaysToExpire == 1){
@@ -77,5 +99,3 @@ bool Checker::IsValid() {
 void Checker::Print() {
     Product::Print();
 }
-
-

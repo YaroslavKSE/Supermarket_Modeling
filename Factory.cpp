@@ -39,19 +39,19 @@ void Factory::GenerateProducts() {
         }
         if(TypesOfProduct[random] == "Fish"){
             float weight = float(dist(gen))/ 10 * 3 + 0.2;
-            Product* fish = new Fish(FishNames[dist(gen)], weight);
+            Product* fish = new Fish(Product(FishNames[dist(gen)], weight));
             Stock.push_back(fish);
             continue;
         }
         if(TypesOfProduct[random] == "Meat"){
             float weight = float(dist(gen))/ 10 * 4 + 0.2;
-            Product* meat = new Meat(MeatNames[dist(gen)], weight);
+            Product* meat = new Meat(Product(MeatNames[dist(gen)], weight));
             Stock.push_back(meat);
             continue;
         }
         if(TypesOfProduct[random] == "Soap"){
             float weight = float(dist(gen))/ 10 * 3 + 0.1;
-            Product* soap = new Soap(SoapNames[dist(gen)], weight);
+            Product* soap = new Soap(Product(SoapNames[dist(gen)], weight));
             Stock.push_back(soap);
             continue;
         }

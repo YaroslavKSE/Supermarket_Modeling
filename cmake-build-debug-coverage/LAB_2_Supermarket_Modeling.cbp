@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Projects_C++/Factory.cpp">
+			<Option target="LAB_2_Supermarket_Modeling"/>
+		</Unit>
+		<Unit filename="D:/Projects_C++/Factory.h">
+			<Option target="LAB_2_Supermarket_Modeling"/>
+		</Unit>
 		<Unit filename="D:/Projects_C++/FileReader.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
@@ -116,6 +122,12 @@
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
 		<Unit filename="D:/Projects_C++/Supermarket.h">
+			<Option target="LAB_2_Supermarket_Modeling"/>
+		</Unit>
+		<Unit filename="D:/Projects_C++/Truck.cpp">
+			<Option target="LAB_2_Supermarket_Modeling"/>
+		</Unit>
+		<Unit filename="D:/Projects_C++/Truck.h">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
 		<Unit filename="D:/Projects_C++/main.cpp">

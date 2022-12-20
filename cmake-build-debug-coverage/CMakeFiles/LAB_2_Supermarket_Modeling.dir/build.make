@@ -166,6 +166,34 @@ CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.s"
 	"D:\C++\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects_C++\Supermarket.cpp -o CMakeFiles\LAB_2_Supermarket_Modeling.dir\Supermarket.cpp.s
 
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.obj: CMakeFiles/LAB_2_Supermarket_Modeling.dir/flags.make
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.obj: D:/Projects_C++/Factory.cpp
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.obj: CMakeFiles/LAB_2_Supermarket_Modeling.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Projects_C++\cmake-build-debug-coverage\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.obj"
+	"D:\C++\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.obj -MF CMakeFiles\LAB_2_Supermarket_Modeling.dir\Factory.cpp.obj.d -o CMakeFiles\LAB_2_Supermarket_Modeling.dir\Factory.cpp.obj -c D:\Projects_C++\Factory.cpp
+
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.i"
+	"D:\C++\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects_C++\Factory.cpp > CMakeFiles\LAB_2_Supermarket_Modeling.dir\Factory.cpp.i
+
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.s"
+	"D:\C++\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects_C++\Factory.cpp -o CMakeFiles\LAB_2_Supermarket_Modeling.dir\Factory.cpp.s
+
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.obj: CMakeFiles/LAB_2_Supermarket_Modeling.dir/flags.make
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.obj: D:/Projects_C++/Truck.cpp
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.obj: CMakeFiles/LAB_2_Supermarket_Modeling.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Projects_C++\cmake-build-debug-coverage\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.obj"
+	"D:\C++\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.obj -MF CMakeFiles\LAB_2_Supermarket_Modeling.dir\Truck.cpp.obj.d -o CMakeFiles\LAB_2_Supermarket_Modeling.dir\Truck.cpp.obj -c D:\Projects_C++\Truck.cpp
+
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.i"
+	"D:\C++\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects_C++\Truck.cpp > CMakeFiles\LAB_2_Supermarket_Modeling.dir\Truck.cpp.i
+
+CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.s"
+	"D:\C++\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects_C++\Truck.cpp -o CMakeFiles\LAB_2_Supermarket_Modeling.dir\Truck.cpp.s
+
 # Object files for target LAB_2_Supermarket_Modeling
 LAB_2_Supermarket_Modeling_OBJECTS = \
 "CMakeFiles/LAB_2_Supermarket_Modeling.dir/main.cpp.obj" \
@@ -174,7 +202,9 @@ LAB_2_Supermarket_Modeling_OBJECTS = \
 "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freezer.cpp.obj" \
 "CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.obj" \
 "CMakeFiles/LAB_2_Supermarket_Modeling.dir/FileReader.cpp.obj" \
-"CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.obj"
+"CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.obj" \
+"CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.obj" \
+"CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.obj"
 
 # External object files for target LAB_2_Supermarket_Modeling
 LAB_2_Supermarket_Modeling_EXTERNAL_OBJECTS =
@@ -186,11 +216,13 @@ LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/Freeze
 LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/Refrigerator.cpp.obj
 LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/FileReader.cpp.obj
 LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.obj
+LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.obj
+LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.obj
 LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/build.make
 LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/linklibs.rsp
 LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/objects1.rsp
 LAB_2_Supermarket_Modeling.exe: CMakeFiles/LAB_2_Supermarket_Modeling.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Projects_C++\cmake-build-debug-coverage\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable LAB_2_Supermarket_Modeling.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Projects_C++\cmake-build-debug-coverage\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable LAB_2_Supermarket_Modeling.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\LAB_2_Supermarket_Modeling.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

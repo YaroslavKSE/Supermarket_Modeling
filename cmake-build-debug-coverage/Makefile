@@ -128,6 +128,30 @@ LAB_2_Supermarket_Modeling/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LAB_2_Supermarket_Modeling.dir\build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/build
 .PHONY : LAB_2_Supermarket_Modeling/fast
 
+Factory.obj: Factory.cpp.obj
+.PHONY : Factory.obj
+
+# target to build an object file
+Factory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LAB_2_Supermarket_Modeling.dir\build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.obj
+.PHONY : Factory.cpp.obj
+
+Factory.i: Factory.cpp.i
+.PHONY : Factory.i
+
+# target to preprocess a source file
+Factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LAB_2_Supermarket_Modeling.dir\build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.i
+.PHONY : Factory.cpp.i
+
+Factory.s: Factory.cpp.s
+.PHONY : Factory.s
+
+# target to generate assembly for a file
+Factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LAB_2_Supermarket_Modeling.dir\build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Factory.cpp.s
+.PHONY : Factory.cpp.s
+
 FileReader.obj: FileReader.cpp.obj
 .PHONY : FileReader.obj
 
@@ -272,6 +296,30 @@ Supermarket.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LAB_2_Supermarket_Modeling.dir\build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Supermarket.cpp.s
 .PHONY : Supermarket.cpp.s
 
+Truck.obj: Truck.cpp.obj
+.PHONY : Truck.obj
+
+# target to build an object file
+Truck.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LAB_2_Supermarket_Modeling.dir\build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.obj
+.PHONY : Truck.cpp.obj
+
+Truck.i: Truck.cpp.i
+.PHONY : Truck.i
+
+# target to preprocess a source file
+Truck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LAB_2_Supermarket_Modeling.dir\build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.i
+.PHONY : Truck.cpp.i
+
+Truck.s: Truck.cpp.s
+.PHONY : Truck.s
+
+# target to generate assembly for a file
+Truck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LAB_2_Supermarket_Modeling.dir\build.make CMakeFiles/LAB_2_Supermarket_Modeling.dir/Truck.cpp.s
+.PHONY : Truck.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -305,6 +353,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... LAB_2_Supermarket_Modeling
+	@echo ... Factory.obj
+	@echo ... Factory.i
+	@echo ... Factory.s
 	@echo ... FileReader.obj
 	@echo ... FileReader.i
 	@echo ... FileReader.s
@@ -323,6 +374,9 @@ help:
 	@echo ... Supermarket.obj
 	@echo ... Supermarket.i
 	@echo ... Supermarket.s
+	@echo ... Truck.obj
+	@echo ... Truck.i
+	@echo ... Truck.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
