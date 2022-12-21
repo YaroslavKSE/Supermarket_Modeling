@@ -8,132 +8,130 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/Projects_C++/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="LAB_2_Supermarket_Modeling">
-				<Option output="D:/Projects_C++/cmake-build-debug/LAB_2_Supermarket_Modeling.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects_C++/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 LAB_2_Supermarket_Modeling"/>
-					<CompileFile command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="LAB_2_Supermarket_Modeling/fast">
-				<Option output="D:/Projects_C++/cmake-build-debug/LAB_2_Supermarket_Modeling.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects_C++/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="D:/C++/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 LAB_2_Supermarket_Modeling/fast"/>
-					<CompileFile command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/Projects_C++/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/Projects_C++/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/C++/CLion 2022.2.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Projects_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LAB_2_Supermarket_Modeling">
+				<Option output="/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/LAB_2_Supermarket_Modeling.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 LAB_2_Supermarket_Modeling"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LAB_2_Supermarket_Modeling/fast">
+				<Option output="/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/LAB_2_Supermarket_Modeling.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 LAB_2_Supermarket_Modeling/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/C++/Supermarket_Modeling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Projects_C++/Factory.cpp">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Factory.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Factory.h">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Factory.h">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/FileReader.cpp">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/FileReader.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/FileReader.h">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/FileReader.h">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Freezer.cpp">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Freezer.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Freezer.h">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Freezer.h">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Product.cpp">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Product.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Product.h">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Product.h">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Refrigerator.cpp">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Refrigerator.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Refrigerator.h">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Refrigerator.h">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Shelve.cpp">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Shelve.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Shelve.h">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Shelve.h">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Supermarket.cpp">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Supermarket.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Supermarket.h">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Supermarket.h">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Truck.cpp">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Truck.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/Truck.h">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/Truck.h">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/main.cpp">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/main.cpp">
 			<Option target="LAB_2_Supermarket_Modeling"/>
 		</Unit>
-		<Unit filename="D:/Projects_C++/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/C++/Supermarket_Modeling/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

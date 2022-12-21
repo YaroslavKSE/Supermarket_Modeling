@@ -8,7 +8,10 @@
 using namespace std;
 
 class Refrigerator : public Shelve{
+    int Capacity = 0;
 public:
+    int maxSize = 10;
+
     Refrigerator(int temperature, vector<Product*> products);
 
     Refrigerator();
@@ -24,6 +27,9 @@ public:
     void RemoveProduct(const string& name) override;
 
     void SetTemperature(int number);
+
+    int GetCapacity() override;
+
 
 private:
     int temperature;

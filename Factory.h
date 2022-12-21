@@ -20,7 +20,7 @@ private:
     vector<string> SoapNames;
 public:
     Factory();
-    void GenerateProducts();
+    void GenerateProducts(int amount);
     void FillProducts();
     void FillNames();
     vector<Product*> GetStock();

@@ -5,7 +5,13 @@ Refrigerator::Refrigerator(int temperature, vector<Product*> products) : tempera
                                                                          Products(move(products)) {}
 
 void Refrigerator::AddProduct(Product *product) {
-    Products.push_back(product);
+    if (Capacity != maxSize) {
+        Products.push_back(product);
+        Capacity++;
+    }
+    else{
+        cout << "Failed to add product"; product->Print(); cout <<"\n";
+    }
 }
 
 void Refrigerator::Print() {
@@ -31,6 +37,7 @@ void Refrigerator::RemoveProduct(const string& name) {
     for (int i = 0; i < Products.size(); ++i) {
         if(Products[i]->GetName() == name){
             Products.erase(Products.begin() + i);
+            Capacity--;
             break;
         }
     }
@@ -47,6 +54,10 @@ void Refrigerator::SetTemperature(int number) {
         temperature = number;
         cout << "Successfully set temperature to: " << number << "\n";
     }
+}
+
+int Refrigerator::GetCapacity() {
+    return Capacity;
 }
 
 

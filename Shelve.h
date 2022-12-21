@@ -13,9 +13,9 @@ public:
     Shelve();
     explicit Shelve(vector<Product*> products);
 
-    const int maxSize = 7;
+    int maxSize = 5;
 
-    int GetCapacity();
+    virtual int GetCapacity();
     virtual void AddProduct(Product* product);
 
     virtual Product* GetFirstProduct();

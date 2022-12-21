@@ -8,7 +8,7 @@ Shelve::Shelve()
 void Shelve::AddProduct(Product* product)
 {
 
-    if (Capacity != 7) {
+    if (Capacity != maxSize) {
         Products.push_back(product);
         Capacity++;
     }

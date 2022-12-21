@@ -4,7 +4,13 @@
 Freezer::Freezer(int temperature, vector<Product*> products) : temperature(temperature), Products(move(products)) {}
 
 void Freezer::AddProduct(Product *product) {
-    Products.push_back(product);
+    if (Capacity != maxSize) {
+        Products.push_back(product);
+        Capacity++;
+    }
+    else{
+        cout << "Failed to add product"; product->Print(); cout <<"\n";
+    }
 }
 
 void Freezer::Print() {
@@ -21,6 +27,7 @@ void Freezer::RemoveProduct(string name) {
     for (int i = 0; i < Products.size(); ++i) {
         if(Products[i]->GetName() == name){
             Products.erase(Products.begin() + i);
+            Capacity--;
             break;
         }
     }
@@ -37,6 +44,10 @@ void Freezer::SetTemperature(int number) {
         temperature = number;
         cout << "Successfully set temperature to: " << number << "\n";
     }
+}
+
+int Freezer::GetCapacity() {
+    return Capacity;
 }
 
 Freezer::Freezer() = default;

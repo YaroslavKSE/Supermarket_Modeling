@@ -7,23 +7,28 @@
 
 using namespace std;
 
-class Freezer{
+class Freezer : public Shelve{
+    int Capacity = 0;
 public:
     Freezer(int temperature, vector<Product*> products);
 
     Freezer();
 
-    void AddProduct(Product* product);
+    int maxSize = 8;
 
-    void Print();
+    void AddProduct(Product* product) override;
 
-    void NextDay();
+    void Print() override;
+
+    void NextDay() override;
 
     void SetTemperature(int number);
 
-    Product* GetFirstProduct();
+    Product* GetFirstProduct() override;
 
     void RemoveProduct(string name);
+
+    int GetCapacity() override;
 
 private:
     int temperature{};

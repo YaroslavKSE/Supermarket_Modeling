@@ -110,9 +110,9 @@ vector<string> Split(const string &line, char delim) {
 
 int main() {
     Factory factory;
-    factory.GenerateProducts();
+    factory.GenerateProducts(200);
     Truck truck;
-    truck.SetMaxCapacity(100);
+    truck.SetMaxCapacity(500);
     truck.FillTruck(factory.GetStock());
     FileReader fileReader("Products.txt");
     vector<string> records = fileReader.ReadText();
@@ -130,9 +130,9 @@ int main() {
             supermarket.AddFreezer(FillFreezer(record));
         }
     }
-    for (auto & deliverProduct : deliverProducts) {
-        supermarket.AddProduct(deliverProduct);
-    }
+
+    supermarket.AddProduct(deliverProducts);
+
     while (true) {
         cout << "Enter command:" << "\n";
         string command;

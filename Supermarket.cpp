@@ -106,29 +106,59 @@ void Supermarket::SetTemperature(const string& fridgeOrFreezer, int position, in
     }
 }
 
-void Supermarket::AddProduct(Product* product) {
-    auto *check = dynamic_cast<Checker*>(product);
-    if(check->placeToPut == 'S'){
-        for (int i = 0; i < Shelves.size(); ++i) {
-            if(Shelves[i].GetCapacity() != Shelves[i].maxSize){
-                Shelves[i].AddProduct(product);
-                break;
+void Supermarket::AddProduct(const vector<Product*>& products) {
+    int SIndex = 0;
+    int RIndex = 0;
+    int FIndex = 0;
+    for (auto & product : products) {
+        auto *check = dynamic_cast<Checker*>(product);
+        if(check->placeToPut == 'S'){
+            if (Shelves[SIndex].GetCapacity() < Shelves[SIndex].maxSize)
+            {
+                Shelves[SIndex].AddProduct(product);
+                continue;
             }
-
-            if(Shelves[i].GetCapacity() == Shelves[i].maxSize){
+            if (Shelves[SIndex].GetCapacity() == Shelves[SIndex].maxSize && SIndex < Shelves.size()){
+                SIndex++;
+            }
+            if(Shelves[SIndex - 1].GetCapacity() == Shelves[SIndex - 1].maxSize && SIndex == Shelves.size()){
                 Shelve shelve;
                 shelve.AddProduct(product);
                 Shelves.push_back(shelve);
             }
         }
+        if(check->placeToPut == 'R'){
+            if (Refrigerators[RIndex].GetCapacity() < Refrigerators[RIndex].maxSize)
+            {
+                Refrigerators[RIndex].AddProduct(product);
+                continue;
+            }
+            if (Refrigerators[RIndex].GetCapacity() == Refrigerators[RIndex].maxSize && RIndex < Refrigerators.size()){
+                RIndex++;
+            }
+            if(Refrigerators[RIndex - 1].GetCapacity() == Refrigerators[RIndex - 1].maxSize && RIndex == Refrigerators.size()){
+                Refrigerator refrigerator;
+                refrigerator.AddProduct(product);
+                Refrigerators.push_back(refrigerator);
+            }
+        }
+        if(check->placeToPut == 'F'){
+            if (Freezers[FIndex].GetCapacity() < Freezers[FIndex].maxSize)
+            {
+                Freezers[FIndex].AddProduct(product);
+                continue;
+            }
+            if (Freezers[FIndex].GetCapacity() == Freezers[FIndex].maxSize && FIndex < Freezers.size()){
+                FIndex++;
+            }
+            if(Freezers[FIndex - 1].GetCapacity() == Freezers[FIndex - 1].maxSize && FIndex == Freezers.size()){
+                Freezer freezer;
+                freezer.AddProduct(product);
+                Freezers.push_back(freezer);
+            }
+        }
+    }
 
-    }
-    if(check->placeToPut == 'R'){
-        Refrigerators[0].AddProduct(product);
-    }
-    if(check->placeToPut == 'F'){
-        Freezers[0].AddProduct(product);
-    }
 }
 
 

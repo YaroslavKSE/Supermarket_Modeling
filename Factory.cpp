@@ -2,13 +2,13 @@
 
 Factory::Factory() = default;
 
-void Factory::GenerateProducts() {
+void Factory::GenerateProducts(int amount) {
     FillProducts();
     FillNames();
     random_device rd; // obtain a random number from hardware
     mt19937 gen(rd()); // seed the generator
     uniform_int_distribution<> dist(0, 6); // define the range
-    for (int n = 0; n < 20; ++n) {
+    for (int n = 0; n < amount; ++n) {
         int random = dist(gen);
         if(TypesOfProduct[random] == "Bread"){
             float weight = float(dist(gen)) / 10 * 3 + 0.2;

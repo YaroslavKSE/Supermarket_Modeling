@@ -26,7 +26,7 @@ public:
     void ViewByType(const string& containerType);
     void NextDay();
     void Take(const string& fromWhere, int number, const string& name);
-    void AddProduct(Product* product);
+    void AddProduct(const vector<Product*>& products);
 };
 
 
