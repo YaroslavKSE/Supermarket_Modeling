@@ -9,11 +9,13 @@ class Shelve
 protected:
     vector<Product*> Products;
     int Capacity = 0;
-    const int maxSize = 7;
 public:
     Shelve();
     explicit Shelve(vector<Product*> products);
 
+    const int maxSize = 7;
+
+    int GetCapacity();
     virtual void AddProduct(Product* product);
 
     virtual Product* GetFirstProduct();

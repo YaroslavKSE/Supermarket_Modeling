@@ -112,7 +112,7 @@ int main() {
     Factory factory;
     factory.GenerateProducts();
     Truck truck;
-    truck.SetMaxCapacity(20);
+    truck.SetMaxCapacity(100);
     truck.FillTruck(factory.GetStock());
     FileReader fileReader("Products.txt");
     vector<string> records = fileReader.ReadText();

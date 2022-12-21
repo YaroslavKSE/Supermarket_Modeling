@@ -7,10 +7,11 @@ Shelve::Shelve()
 
 void Shelve::AddProduct(Product* product)
 {
-    if(Capacity!= 7){
+
+    if (Capacity != 7) {
         Products.push_back(product);
         Capacity++;
-        }
+    }
     else{
         cout << "Failed to add product"; product->Print(); cout <<"\n";
     }
@@ -48,4 +49,8 @@ void Shelve::RemoveProduct(const string& name) {
 
 Product *Shelve::GetFirstProduct() {
     return Products[0];
+}
+
+int Shelve::GetCapacity() {
+    return Capacity;
 }

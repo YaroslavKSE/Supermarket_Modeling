@@ -109,7 +109,19 @@ void Supermarket::SetTemperature(const string& fridgeOrFreezer, int position, in
 void Supermarket::AddProduct(Product* product) {
     auto *check = dynamic_cast<Checker*>(product);
     if(check->placeToPut == 'S'){
-        Shelves[0].AddProduct(product);
+        for (int i = 0; i < Shelves.size(); ++i) {
+            if(Shelves[i].GetCapacity() != Shelves[i].maxSize){
+                Shelves[i].AddProduct(product);
+                break;
+            }
+
+            if(Shelves[i].GetCapacity() == Shelves[i].maxSize){
+                Shelve shelve;
+                shelve.AddProduct(product);
+                Shelves.push_back(shelve);
+            }
+        }
+
     }
     if(check->placeToPut == 'R'){
         Refrigerators[0].AddProduct(product);
