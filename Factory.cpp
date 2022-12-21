@@ -107,3 +107,10 @@ void Factory::FillNames() {
 vector<Product *> Factory::GetStock() {
     return Stock;
 }
+
+void Factory::Print() {
+    cout << "Products that are stored in Factory" << "\n";
+    for (auto & product : Stock) {
+        product->Print();
+    }
+}

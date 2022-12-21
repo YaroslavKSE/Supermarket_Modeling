@@ -142,6 +142,14 @@ int main() {
             supermarket.View();
             continue;
         }
+        if (userInput[0] == "View" && userInput[1] == "Factory") {
+            factory.Print();
+            continue;
+        }
+        if (userInput[0] == "View" && userInput[1] == "Truck") {
+            truck.Print();
+            continue;
+        }
         if(userInput[0] == "View" && !userInput[1].empty()){
             supermarket.ViewByType(userInput[1]);
             continue;

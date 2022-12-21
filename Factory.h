@@ -24,6 +24,7 @@ public:
     void FillProducts();
     void FillNames();
     vector<Product*> GetStock();
+    void Print();
 };
 
 

@@ -23,3 +23,10 @@ void Truck::SetMaxCapacity(float number) {
 vector<Product*> Truck::UnLoad() {
     return productsToDeliver;
 }
+
+void Truck::Print() {
+    cout << "Products that are loaded in truck:" << "\n";
+    for (auto & i : productsToDeliver) {
+        i->Print();
+    }
+}

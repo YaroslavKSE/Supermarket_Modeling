@@ -14,6 +14,7 @@ public:
     void FillTruck(vector<Product*> products);
     void SetMaxCapacity(float number);
     vector<Product*> UnLoad();
+    void Print();
 };
 
 
